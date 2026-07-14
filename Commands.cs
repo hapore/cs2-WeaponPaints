@@ -37,18 +37,29 @@ public partial class WeaponPaints
 
 				if (WeaponSync != null)
 				{
-					_ = Task.Run(async () => await WeaponSync.GetPlayerData(playerInfo));
+					var slot = player.Slot;
 
-					GivePlayerGloves(player);
-					RefreshWeapons(player);
-					GivePlayerAgent(player);
-					GivePlayerMusicKit(player);
-					AddTimer(0.15f, () => GivePlayerPin(player));
-				}
+					_ = Task.Run(async () =>
+					{
+						await WeaponSync.GetPlayerData(playerInfo);
 
-				if (!string.IsNullOrEmpty(Localizer["wp_command_refresh_done"]))
-				{
-					player.Print(Localizer["wp_command_refresh_done"]);
+						Server.NextFrame(() =>
+						{
+							var refreshedPlayer = Utilities.GetPlayerFromSlot(slot);
+							if (refreshedPlayer == null || !refreshedPlayer.IsValid) return;
+
+							GivePlayerGloves(refreshedPlayer);
+							RefreshWeapons(refreshedPlayer);
+							GivePlayerAgent(refreshedPlayer);
+							GivePlayerMusicKit(refreshedPlayer);
+							AddTimer(0.15f, () => GivePlayerPin(refreshedPlayer));
+
+							if (!string.IsNullOrEmpty(Localizer["wp_command_refresh_done"]))
+							{
+								refreshedPlayer.Print(Localizer["wp_command_refresh_done"]);
+							}
+						});
+					});
 				}
 				return;
 			}
@@ -220,18 +231,29 @@ public partial class WeaponPaints
 
 				if (WeaponSync != null)
 				{
-					_ = Task.Run(async () => await WeaponSync.GetPlayerData(playerInfo));
-				}
+					var slot = targetPlayer.Slot;
 
-				GivePlayerGloves(targetPlayer);
-				RefreshWeapons(targetPlayer);
-				GivePlayerAgent(targetPlayer);
-				GivePlayerMusicKit(targetPlayer);
-				AddTimer(0.15f, () => GivePlayerPin(targetPlayer));
+					_ = Task.Run(async () =>
+					{
+						await WeaponSync.GetPlayerData(playerInfo);
 
-				if (!string.IsNullOrEmpty(Localizer["wp_command_refresh_done"]))
-				{
-					targetPlayer.Print(Localizer["wp_command_refresh_done"]);
+						Server.NextFrame(() =>
+						{
+							var refreshedPlayer = Utilities.GetPlayerFromSlot(slot);
+							if (refreshedPlayer == null || !refreshedPlayer.IsValid) return;
+
+							GivePlayerGloves(refreshedPlayer);
+							RefreshWeapons(refreshedPlayer);
+							GivePlayerAgent(refreshedPlayer);
+							GivePlayerMusicKit(refreshedPlayer);
+							AddTimer(0.15f, () => GivePlayerPin(refreshedPlayer));
+
+							if (!string.IsNullOrEmpty(Localizer["wp_command_refresh_done"]))
+							{
+								refreshedPlayer.Print(Localizer["wp_command_refresh_done"]);
+							}
+						});
+					});
 				}
 
 				Console.WriteLine($"[WeaponPaints] Skins refreshed for {targetPlayer.PlayerName}");
