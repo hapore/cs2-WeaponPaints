@@ -39,6 +39,7 @@ public partial class WeaponPaints : BasePlugin, IPluginConfig<WeaponPaintsConfig
 			GPlayerWeaponsInfo.Clear();
 			GPlayersKnife.Clear();
 			GPlayersGlove.Clear();
+			GPlayersGloveApplied.Clear();
 			GPlayersAgent.Clear();
 			GPlayersPin.Clear();
 			GPlayersMusic.Clear();

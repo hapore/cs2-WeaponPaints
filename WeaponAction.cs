@@ -385,6 +385,26 @@ namespace WeaponPaints
 			if (pawn == null || !pawn.IsValid)
 				return;
 
+			// Resolve the glove BEFORE touching the econ item. Wiping the attributes of a player
+			// who has no plugin glove would destroy the networked attributes of the gloves he owns
+			// in his own inventory: he would keep seeing them (predicted client side) while everyone
+			// else would render empty/default hands.
+			if (!GPlayersGlove.TryGetValue(player.Slot, out var gloveInfo) ||
+			    !gloveInfo.TryGetValue(player.Team, out var gloveId) ||
+			    gloveId == 0 ||
+			    !HasChangedPaint(player, gloveId, out var weaponInfo) || weaponInfo == null)
+			{
+				// Only undo what we applied ourselves ("Gloves | Default", team without a glove, ...).
+				// If we never touched this pawn there is nothing to reset and clearing the item here
+				// would destroy the gloves the player owns in his own inventory.
+				if (GPlayersGloveApplied.TryRemove(player.Slot, out _))
+					ResetPlayerGloves(player, pawn);
+
+				return;
+			}
+
+			GPlayersGloveApplied[player.Slot] = 1;
+
 			CEconItemView item = pawn.EconGloves;
 
 			item.NetworkedDynamicAttributes.Attributes.RemoveAll();
@@ -402,35 +422,93 @@ namespace WeaponPaints
 					if (!player.PawnIsAlive)
 						return;
 
-					if (!GPlayersGlove.TryGetValue(player.Slot, out var gloveInfo) ||
-					    !gloveInfo.TryGetValue(player.Team, out var gloveId) ||
-					    gloveId == 0 ||
-					    !HasChangedPaint(player, gloveId, out var weaponInfo) || weaponInfo == null)
+					CCSPlayerPawn? currentPawn = player.PlayerPawn.Value;
+					if (currentPawn == null || !currentPawn.IsValid)
 						return;
 
-					item.ItemDefinitionIndex = gloveId;
+					CEconItemView currentItem = currentPawn.EconGloves;
+
+					currentItem.ItemDefinitionIndex = gloveId;
 					
-					UpdatePlayerEconItemId(item);
+					UpdatePlayerEconItemId(currentItem);
 
-					item.NetworkedDynamicAttributes.Attributes.RemoveAll();
-					CAttributeListSetOrAddAttributeValueByName.Invoke(item.NetworkedDynamicAttributes.Handle, "set item texture prefab", weaponInfo.Paint);
-					CAttributeListSetOrAddAttributeValueByName.Invoke(item.NetworkedDynamicAttributes.Handle, "set item texture seed", weaponInfo.Seed);
-					CAttributeListSetOrAddAttributeValueByName.Invoke(item.NetworkedDynamicAttributes.Handle, "set item texture wear", weaponInfo.Wear);
+					currentItem.NetworkedDynamicAttributes.Attributes.RemoveAll();
+					CAttributeListSetOrAddAttributeValueByName.Invoke(currentItem.NetworkedDynamicAttributes.Handle, "set item texture prefab", weaponInfo.Paint);
+					CAttributeListSetOrAddAttributeValueByName.Invoke(currentItem.NetworkedDynamicAttributes.Handle, "set item texture seed", weaponInfo.Seed);
+					CAttributeListSetOrAddAttributeValueByName.Invoke(currentItem.NetworkedDynamicAttributes.Handle, "set item texture wear", weaponInfo.Wear);
 
-					item.AttributeList.Attributes.RemoveAll();
-					CAttributeListSetOrAddAttributeValueByName.Invoke(item.AttributeList.Handle, "set item texture prefab", weaponInfo.Paint);
-					CAttributeListSetOrAddAttributeValueByName.Invoke(item.AttributeList.Handle, "set item texture seed", weaponInfo.Seed);
-					CAttributeListSetOrAddAttributeValueByName.Invoke(item.AttributeList.Handle, "set item texture wear", weaponInfo.Wear);
+					currentItem.AttributeList.Attributes.RemoveAll();
+					CAttributeListSetOrAddAttributeValueByName.Invoke(currentItem.AttributeList.Handle, "set item texture prefab", weaponInfo.Paint);
+					CAttributeListSetOrAddAttributeValueByName.Invoke(currentItem.AttributeList.Handle, "set item texture seed", weaponInfo.Seed);
+					CAttributeListSetOrAddAttributeValueByName.Invoke(currentItem.AttributeList.Handle, "set item texture wear", weaponInfo.Wear);
 
-					item.Initialized = true;
-				
+					currentItem.Initialized = true;
+
+					// m_EconGloves is only sent to other clients when it is flagged as dirty.
+					// Without this the owner sees his glove (local prediction) but everybody else
+					// keeps the state the pawn was spawned with.
+					Utilities.SetStateChanged(currentPawn, "CCSPlayerPawn", "m_EconGloves");
+
 					//force gloves model refresh to prevent model overlap
 					player.ExecuteClientCommand("lastinv");
-					SetBodygroup(pawn, "first_or_third_person", 0);
-					AddTimer(0.2f, () => SetBodygroup(pawn, "first_or_third_person", 1), TimerFlags.STOP_ON_MAPCHANGE);
+
+					// hides the hands baked into the player model so the econ glove is the only
+					// thing rendered on the world model (what the other players look at)
+					SetBodygroup(currentPawn, "default_gloves", 1);
+
+					SetBodygroup(currentPawn, "first_or_third_person", 0);
+					AddTimer(0.2f, () =>
+					{
+						if (!player.IsValid || !player.PawnIsAlive)
+							return;
+
+						CCSPlayerPawn? refreshPawn = player.PlayerPawn.Value;
+						if (refreshPawn == null || !refreshPawn.IsValid)
+							return;
+
+						SetBodygroup(refreshPawn, "first_or_third_person", 1);
+					}, TimerFlags.STOP_ON_MAPCHANGE);
 				}
 				catch (Exception) { }
 			}, TimerFlags.STOP_ON_MAPCHANGE);
+		}
+
+		// Removes a glove the plugin applied earlier and puts the pawn back on the hands
+		// baked into its model. Never call this for a player we did not modify.
+		private void ResetPlayerGloves(CCSPlayerController player, CCSPlayerPawn pawn)
+		{
+			try
+			{
+				CEconItemView item = pawn.EconGloves;
+
+				item.NetworkedDynamicAttributes.Attributes.RemoveAll();
+				item.AttributeList.Attributes.RemoveAll();
+
+				item.ItemDefinitionIndex = 0;
+				item.ItemID = 0;
+				item.ItemIDLow = 0;
+				item.ItemIDHigh = 0;
+				item.Initialized = false;
+
+				Utilities.SetStateChanged(pawn, "CCSPlayerPawn", "m_EconGloves");
+
+				SetBodygroup(pawn, "default_gloves", 0);
+
+				player.ExecuteClientCommand("lastinv");
+				SetBodygroup(pawn, "first_or_third_person", 0);
+				AddTimer(0.2f, () =>
+				{
+					if (!player.IsValid || !player.PawnIsAlive)
+						return;
+
+					CCSPlayerPawn? refreshPawn = player.PlayerPawn.Value;
+					if (refreshPawn == null || !refreshPawn.IsValid)
+						return;
+
+					SetBodygroup(refreshPawn, "first_or_third_person", 1);
+				}, TimerFlags.STOP_ON_MAPCHANGE);
+			}
+			catch (Exception) { }
 		}
 
 		private static int GetRandomPaint(int defindex)

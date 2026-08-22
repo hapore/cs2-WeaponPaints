@@ -100,6 +100,7 @@ namespace WeaponPaints
 			if (Config.Additional.GloveEnabled)
 			{
 				GPlayersGlove.TryRemove(player.Slot, out _);
+				GPlayersGloveApplied.TryRemove(player.Slot, out _);
 			}
 			if (Config.Additional.AgentEnabled)
 			{

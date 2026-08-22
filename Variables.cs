@@ -75,6 +75,8 @@ public partial class WeaponPaints
 	public static IStringLocalizer? _localizer;
 	internal static readonly ConcurrentDictionary<int, ConcurrentDictionary<CsTeam, string>> GPlayersKnife = new();
 	internal static readonly ConcurrentDictionary<int, ConcurrentDictionary<CsTeam, ushort>> GPlayersGlove = new();
+	// slots whose EconGloves the plugin overwrote, so we know when we have to undo it
+	internal static readonly ConcurrentDictionary<int, byte> GPlayersGloveApplied = new();
 	internal static readonly ConcurrentDictionary<int, ConcurrentDictionary<CsTeam, ushort>> GPlayersMusic = new();
 	internal static readonly ConcurrentDictionary<int, ConcurrentDictionary<CsTeam, ushort>> GPlayersPin = new();
 	internal static readonly ConcurrentDictionary<int, (string? CT, string? T)> GPlayersAgent = new();
