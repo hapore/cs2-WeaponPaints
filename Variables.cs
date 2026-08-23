@@ -85,6 +85,48 @@ public partial class WeaponPaints
 	internal static List<JObject> PinsList = [];
 	internal static List<JObject> GlovesList = [];
 	internal static List<JObject> AgentsList = [];
+	// agent model path -> item definition index, so we can tell the game which character
+	// the player is wearing and not only which model to draw (agent voice bank)
+	internal static readonly Dictionary<string, ushort> AgentDefIndexes = new(StringComparer.OrdinalIgnoreCase);
+
+	// Voice bank of every agent that ships one, taken from "vo_prefix" in items_game.txt.
+	// The 31 agents missing here have no voice of their own: they use the standard team
+	// lines, so leaving them untouched is the correct behaviour, not a gap.
+	internal static readonly Dictionary<ushort, string> AgentVoicePrefixes = new()
+	{
+		{ 4613, "professional_epic" },         // Bloody Darryl The Strapped | The Professionals
+		{ 4711, "swat_epic" },                 // Cmdr. Mae 'Dead Cold' Jamison | SWAT
+		{ 4712, "swat_fem" },                  // 1st Lieutenant Farlow | SWAT
+		{ 4726, "professional_epic" },         // Sir Bloody Miami Darryl | The Professionals
+		{ 4727, "professional_fem" },          // Safecracker Voltzmann | The Professionals
+		{ 4730, "professional_fem" },          // Getaway Sally | The Professionals
+		{ 4733, "professional_epic" },         // Sir Bloody Silent Darryl | The Professionals
+		{ 4734, "professional_epic" },         // Sir Bloody Skullhead Darryl | The Professionals
+		{ 4735, "professional_epic" },         // Sir Bloody Darryl Royale | The Professionals
+		{ 4736, "professional_epic" },         // Sir Bloody Loudmouth Darryl | The Professionals
+		{ 4749, "gendarmerie_male" },          // Sous-Lieutenant Medic | Gendarmerie Nationale
+		{ 4750, "gendarmerie_male" },          // Chem-Haz Capitaine | Gendarmerie Nationale
+		{ 4751, "gendarmerie_fem_epic" },      // Chef d'Escadron Rouchard | Gendarmerie Nationale
+		{ 4752, "gendarmerie_male" },          // Aspirant | Gendarmerie Nationale
+		{ 4753, "gendarmerie_male" },          // Officer Jacques Beltram | Gendarmerie Nationale
+		{ 4756, "swat_fem" },                  // Lieutenant 'Tree Hugger' Farlow | SWAT
+		{ 4757, "seal_fem" },                  // Cmdr. Davida 'Goggles' Fernandez | SEAL Frogman
+		{ 4771, "seal_diver_01" },             // Cmdr. Frank 'Wet Sox' Baroud | SEAL Frogman
+		{ 4772, "seal_diver_02" },             // Lieutenant Rex Krikey | SEAL Frogman
+		{ 4773, "jungle_male" },               // Elite Trapper Solman | Guerrilla Warfare
+		{ 4774, "jungle_male_epic" },          // Crasswater The Forgotten | Guerrilla Warfare
+		{ 4775, "jungle_male" },               // Arno The Overgrown | Guerrilla Warfare
+		{ 4776, "jungle_male" },               // Col. Mangos Dabisi | Guerrilla Warfare
+		{ 4777, "jungle_fem_epic" },           // Vypa Sista of the Revolution | Guerrilla Warfare
+		{ 4778, "jungle_fem" },                // Trapper Aggressor | Guerrilla Warfare
+		{ 4780, "jungle_male_epic" },          // 'Medium Rare' Crasswater | Guerrilla Warfare
+		{ 4781, "jungle_fem" },                // Trapper | Guerrilla Warfare
+		{ 5108, "leet_epic" },                 // The Elite Mr. Muhlik | Elite Crew
+		{ 5308, "fbihrt_epic" },               // Special Agent Ava | FBI
+		{ 5400, "ctm_gsg9" },                  // 3rd Commando Company | KSK
+		{ 5404, "seal_epic" },                 // Lt. Commander Ricksaw | NSWC SEAL
+		{ 5504, "balkan_epic" },               // 'The Doctor' Romanov | Sabre
+	};
 	internal static List<JObject> MusicList = [];
 	internal static WeaponSynchronization? WeaponSync;
 	private static bool _gBCommandsAllowed = true;

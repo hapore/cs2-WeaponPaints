@@ -568,13 +568,66 @@ namespace WeaponPaints
 			{
 				Server.NextFrame(() =>
 				{
-					player.PlayerPawn.Value.SetModel(
+					if (!player.IsValid)
+						return;
+
+					CCSPlayerPawn? pawn = player.PlayerPawn.Value;
+					if (pawn == null || !pawn.IsValid)
+						return;
+
+					pawn.SetModel(
 						$"agents/models/{model}.vmdl"
 					);
+
+					ApplyAgentCharacter(player, pawn, model);
 				});
 			}
 			catch (Exception)
 			{
+			}
+		}
+
+		// SetModel only swaps the mesh: the game keeps thinking the player wears the default
+		// character of his team, so it falls back to the generic voice bank. m_strVOPrefix is
+		// the field that actually names the voice bank ("vo_prefix" in items_game.txt).
+		private static void ApplyAgentCharacter(CCSPlayerController player, CCSPlayerPawn pawn, string model)
+		{
+			if (!AgentDefIndexes.TryGetValue(model, out var defIndex) || defIndex == 0)
+				return;
+
+			try
+			{
+				pawn.CharacterDefIndex = defIndex;
+				Utilities.SetStateChanged(pawn, "CCSPlayerPawn", "m_nCharacterDefIndex");
+
+				player.PawnCharacterDefIndex = defIndex;
+				Utilities.SetStateChanged(player, "CCSPlayerController", "m_nPawnCharacterDefIndex");
+			}
+			catch (Exception)
+			{
+			}
+
+			// Agents without an entry here have no voice of their own and must keep the
+			// standard team lines.
+			if (!AgentVoicePrefixes.TryGetValue(defIndex, out var voPrefix) || string.IsNullOrEmpty(voPrefix))
+				return;
+
+			try
+			{
+				var previous = Schema.GetString(pawn.Handle, "CCSPlayerPawn", "m_strVOPrefix");
+
+				Schema.SetString(pawn.Handle, "CCSPlayerPawn", "m_strVOPrefix", voPrefix);
+				Utilities.SetStateChanged(pawn, "CCSPlayerPawn", "m_strVOPrefix");
+
+				// items_game.txt encodes the gender in the prefix itself, so this needs no guessing
+				pawn.HasFemaleVoice = voPrefix.Contains("fem", StringComparison.OrdinalIgnoreCase);
+				Utilities.SetStateChanged(pawn, "CCSPlayerPawn", "m_bHasFemaleVoice");
+
+				Utility.Log($"[agent voice] {player.PlayerName}: agent {defIndex} ({model}) vo_prefix \"{previous}\" -> \"{voPrefix}\" (female: {pawn.HasFemaleVoice})");
+			}
+			catch (Exception ex)
+			{
+				Utility.Log($"[agent voice] failed to set vo_prefix for agent {defIndex}: {ex.Message}");
 			}
 		}
 

@@ -6,11 +6,14 @@ using MenuManager;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Text.RegularExpressions;
 
 namespace WeaponPaints
 {
 	internal static class Utility
 	{
+		private static readonly Regex AgentImageDefIndexRegex = new(@"agent-(\d+)\.png", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
 		internal static WeaponPaintsConfig? Config { get; set; }
 
 		internal static async Task CheckDatabaseTables()
@@ -162,10 +165,38 @@ namespace WeaponPaints
 				var json = File.ReadAllText(filePath);
 				var deserializedSkins = JsonConvert.DeserializeObject<List<JObject>>(json);
 				WeaponPaints.AgentsList = deserializedSkins ?? [];
+
+				BuildAgentDefIndexLookup();
+				logger?.LogInformation("Loaded {Agents} agents, {Mapped} with a character definition index (agent voice)",
+					WeaponPaints.AgentsList.Count, WeaponPaints.AgentDefIndexes.Count);
 			}
 			catch (FileNotFoundException)
 			{
 				logger?.LogError("Not found \"agents.json\" file");
+			}
+		}
+
+		// The agents file carries no explicit item definition index, but every entry links its
+		// preview as ".../agent-<defindex>.png", so we recover it from there.
+		private static void BuildAgentDefIndexLookup()
+		{
+			WeaponPaints.AgentDefIndexes.Clear();
+
+			foreach (var agent in WeaponPaints.AgentsList)
+			{
+				var model = agent["model"]?.ToString();
+				if (string.IsNullOrEmpty(model) || model.Equals("null", StringComparison.OrdinalIgnoreCase))
+					continue;
+
+				var image = agent["image"]?.ToString();
+				if (string.IsNullOrEmpty(image))
+					continue;
+
+				var match = AgentImageDefIndexRegex.Match(image);
+				if (!match.Success || !ushort.TryParse(match.Groups[1].Value, out var defIndex))
+					continue;
+
+				WeaponPaints.AgentDefIndexes[model] = defIndex;
 			}
 		}
 
