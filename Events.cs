@@ -32,34 +32,41 @@ namespace WeaponPaints
 
 			try
 			{
-				_ = Task.Run(async () => await WeaponSync.GetPlayerData(playerInfo));
-				/*
-				if (Config.Additional.SkinEnabled)
+				var slot = player.Slot;
+				var steamId = playerInfo.SteamId;
+
+				_ = Task.Run(async () =>
 				{
-					_ = Task.Run(async () => await weaponSync.GetWeaponPaintsFromDatabase(playerInfo));
-				}
-				if (Config.Additional.KnifeEnabled)
-				{
-					_ = Task.Run(async () => await weaponSync.GetKnifeFromDatabase(playerInfo));
-				}
-				if (Config.Additional.GloveEnabled)
-				{
-					_ = Task.Run(async () => await weaponSync.GetGloveFromDatabase(playerInfo));
-				}
-				if (Config.Additional.AgentEnabled)
-				{
-					_ = Task.Run(async () => await weaponSync.GetAgentFromDatabase(playerInfo));
-				}
-				if (Config.Additional.MusicEnabled)
-				{
-					_ = Task.Run(async () => await weaponSync.GetMusicFromDatabase(playerInfo));
-				}
-				*/
+					await WeaponSync.GetPlayerData(playerInfo);
+
+					// The query can finish after the player already spawned (slow database, or
+					// somebody joining straight into a live round). Nothing re-applies on its
+					// own, so without this he would keep his inventory items until his next
+					// spawn, which is the "sometimes my skins don't load" case.
+					Server.NextFrame(() =>
+					{
+						var connectedPlayer = Utilities.GetPlayerFromSlot(slot);
+
+						// the slot may already belong to somebody else if he left in between
+						if (connectedPlayer == null || !connectedPlayer.IsValid || connectedPlayer.IsBot ||
+						    connectedPlayer.SteamID.ToString() != steamId)
+							return;
+
+						if (!connectedPlayer.PawnIsAlive)
+							return;
+
+						GivePlayerGloves(connectedPlayer);
+						GivePlayerAgent(connectedPlayer);
+						GivePlayerMusicKit(connectedPlayer);
+						RefreshWeapons(connectedPlayer);
+						AddTimer(0.15f, () => GivePlayerPin(connectedPlayer));
+					});
+				});
 			}
 			catch
 			{
 			}
-			
+
 			Players.Add(player);
 
 			return HookResult.Continue;

@@ -38,6 +38,7 @@ public partial class WeaponPaints
 				if (WeaponSync != null)
 				{
 					var slot = player.Slot;
+					var steamId = playerInfo.SteamId;
 
 					_ = Task.Run(async () =>
 					{
@@ -46,7 +47,10 @@ public partial class WeaponPaints
 						Server.NextFrame(() =>
 						{
 							var refreshedPlayer = Utilities.GetPlayerFromSlot(slot);
-							if (refreshedPlayer == null || !refreshedPlayer.IsValid) return;
+
+							// the slot may already belong to somebody else if he left in between
+							if (refreshedPlayer == null || !refreshedPlayer.IsValid ||
+							    refreshedPlayer.SteamID.ToString() != steamId) return;
 
 							GivePlayerGloves(refreshedPlayer);
 							RefreshWeapons(refreshedPlayer);

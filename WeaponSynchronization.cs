@@ -19,27 +19,41 @@ internal class WeaponSynchronization
 
 	internal async Task GetPlayerData(PlayerInfo? player)
 	{
-		try
-		{
-			await using var connection = await _database.GetConnectionAsync();
+		const int maxAttempts = 3;
 
-			if (_config.Additional.KnifeEnabled)
-				GetKnifeFromDatabase(player, connection);
-			if (_config.Additional.GloveEnabled)
-				GetGloveFromDatabase(player, connection);
-			if (_config.Additional.AgentEnabled)
-				GetAgentFromDatabase(player, connection);
-			if (_config.Additional.MusicEnabled)
-				GetMusicFromDatabase(player, connection);
-			if (_config.Additional.SkinEnabled)
-				GetWeaponPaintsFromDatabase(player, connection);
-			if (_config.Additional.PinsEnabled)
-				GetPinsFromDatabase(player, connection);
-		}
-		catch (Exception ex)
+		// A single transient database hiccup used to leave the player with no data at all for
+		// the rest of his session, with nothing retrying and nothing telling him why.
+		for (var attempt = 1; attempt <= maxAttempts; attempt++)
 		{
-			// Log the exception or handle it appropriately
-			Console.WriteLine($"An error occurred: {ex.Message}");
+			try
+			{
+				await using var connection = await _database.GetConnectionAsync();
+
+				if (_config.Additional.KnifeEnabled)
+					GetKnifeFromDatabase(player, connection);
+				if (_config.Additional.GloveEnabled)
+					GetGloveFromDatabase(player, connection);
+				if (_config.Additional.AgentEnabled)
+					GetAgentFromDatabase(player, connection);
+				if (_config.Additional.MusicEnabled)
+					GetMusicFromDatabase(player, connection);
+				if (_config.Additional.SkinEnabled)
+					GetWeaponPaintsFromDatabase(player, connection);
+				if (_config.Additional.PinsEnabled)
+					GetPinsFromDatabase(player, connection);
+
+				return;
+			}
+			catch (Exception ex)
+			{
+				if (attempt == maxAttempts)
+				{
+					Utility.Log($"Could not load the data of {player?.Name} ({player?.SteamId}) after {maxAttempts} attempts: {ex.Message}");
+					return;
+				}
+
+				await Task.Delay(500 * attempt);
+			}
 		}
 	}
 
