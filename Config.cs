@@ -71,10 +71,23 @@ namespace WeaponPaints
 
 	public class WeaponPaintsConfig : BasePluginConfig
 	{
-        [JsonPropertyName("ConfigVersion")] public override int Version { get; set; } = 10;
+        [JsonPropertyName("ConfigVersion")] public override int Version { get; set; } = 11;
 
         [JsonPropertyName("SkinsLanguage")]
 		public string SkinsLanguage { get; set; } = "en";
+
+		/// <summary>
+		/// Flag de permiso requerido para que se carguen las skins del jugador.
+		/// Vacío = sin restricción (comportamiento original: carga para todos).
+		///
+		/// Se consulta contra el AdminManager de CounterStrikeSharp, donde
+		/// HaporePermissions deja los flags ya resueltos del jugador al conectar.
+		/// Sirve para que las skins sean un beneficio VIP sin tener que borrar de
+		/// la base lo que el jugador configuró: al vencer el VIP simplemente
+		/// dejan de cargarse, y si renueva vuelve a tener su loadout intacto.
+		/// </summary>
+		[JsonPropertyName("SkinsPermissionFlag")]
+		public string SkinsPermissionFlag { get; set; } = "";
 
 		[JsonPropertyName("DatabaseHost")]
 		public string DatabaseHost { get; set; } = "";
