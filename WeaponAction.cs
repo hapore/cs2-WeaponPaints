@@ -1,5 +1,6 @@
 ﻿using CounterStrikeSharp.API;
 using CounterStrikeSharp.API.Core;
+using CounterStrikeSharp.API.Modules.Admin;
 using CounterStrikeSharp.API.Modules.Entities.Constants;
 using CounterStrikeSharp.API.Modules.Memory;
 using CounterStrikeSharp.API.Modules.Timers;
@@ -12,9 +13,38 @@ namespace WeaponPaints
 {
 	public partial class WeaponPaints
 	{
+		/// <summary>
+		/// ¿Al jugador se le aplican sus items? Con `SkinsPermissionFlag` vacío, a todos
+		/// (comportamiento original); si no, sólo a quien tenga ese flag.
+		///
+		/// El chequeo va en la APLICACIÓN y no en la carga a propósito. Los dos plugins
+		/// enganchan `EventPlayerConnectFull` y el de permisos publica sus flags de forma
+		/// asíncrona, así que al conectar todavía no están: preguntar ahí le negaba los
+		/// items a todo el mundo, y esperarlos retrasaba la carga lo suficiente como para
+		/// que el cuchillo —lo primero que se entrega, en el mismo instante del spawn—
+		/// llegara antes que sus datos y saliera vanilla. Estas funciones corren en el
+		/// spawn o después, cuando los permisos hace rato que están resueltos.
+		///
+		/// Los flags salen del AdminManager de CounterStrikeSharp, que es la API de
+		/// permisos del framework: no se consulta la base ni se conoce al otro plugin.
+		///
+		/// Como se evalúa en cada aplicación, un VIP que vence deja de recibir sus items
+		/// en el siguiente spawn, sin necesidad de reconectar ni de borrar nada.
+		/// </summary>
+		internal static bool HasSkinsAccess(CCSPlayerController? player)
+		{
+			var flag = _config.SkinsPermissionFlag;
+
+			if (string.IsNullOrWhiteSpace(flag)) return true;
+			if (player == null || !player.IsValid || player.IsBot) return false;
+
+			return AdminManager.PlayerHasPermissions(player, flag);
+		}
+
 		private void GivePlayerWeaponSkin(CCSPlayerController player, CBasePlayerWeapon weapon)
 		{
 			if (!Config.Additional.SkinEnabled) return;
+			if (!HasSkinsAccess(player)) return;
 			if (!GPlayerWeaponsInfo.TryGetValue(player.Slot, out _)) return;
 			
 			bool isKnife = weapon.DesignerName.Contains("knife") || weapon.DesignerName.Contains("bayonet");
@@ -104,9 +134,23 @@ namespace WeaponPaints
 			weapon.FallbackPaintKit = weaponInfo.Paint;
 			
 			weapon.FallbackSeed = weaponInfo is { Paint: 38, Seed: 0 } ? _fadeSeed++ : weaponInfo.Seed;
-			
-			weapon.FallbackWear = weaponInfo.Wear;
+
+			// Las dos listas de atributos se vaciaron más arriba (RemoveAll). Las variables
+			// fallback alcanzan para los paint kits viejos, pero los nuevos los compone el
+			// cliente a partir de los atributos econ: si no vuelven prefab, seed y wear en
+			// AMBAS listas, el patrón se arma con la escala y rotación por defecto.
 			CAttributeListSetOrAddAttributeValueByName.Invoke(weapon.AttributeManager.Item.NetworkedDynamicAttributes.Handle, "set item texture prefab", weapon.FallbackPaintKit);
+			CAttributeListSetOrAddAttributeValueByName.Invoke(weapon.AttributeManager.Item.NetworkedDynamicAttributes.Handle, "set item texture seed", weapon.FallbackSeed);
+
+			CAttributeListSetOrAddAttributeValueByName.Invoke(weapon.AttributeManager.Item.AttributeList.Handle, "set item texture prefab", weapon.FallbackPaintKit);
+			CAttributeListSetOrAddAttributeValueByName.Invoke(weapon.AttributeManager.Item.AttributeList.Handle, "set item texture seed", weapon.FallbackSeed);
+
+			ApplyWear(weapon, weaponInfo.Wear);
+
+			// El mismo flag que ya pone el camino de guantes. Sin esto el cliente considera
+			// que el item econ no está completo y compone el acabado por su camino por
+			// defecto: el arma sale "vanilla" aunque el paint kit haya viajado.
+			weapon.AttributeManager.Item.Initialized = true;
 
 			if (weaponInfo.StatTrak)
 			{			
@@ -138,24 +182,48 @@ namespace WeaponPaints
 		}
 		
 		// silly method to update sticker when call RefreshWeapons()
+		// The client only rebuilds the sticker composite when the item actually changes, so a
+		// refresh has to hand it a wear different from the one it already holds. Toggling between
+		// the stored wear and stored + 0.001 is enough, and unlike an accumulator it always comes
+		// back to the value the player picked: the old code fed its own previous result back in and
+		// ignored the database, so lowering the float on the website could never restore factory new.
 		private void IncrementWearForWeaponWithStickers(CCSPlayerController player, CBasePlayerWeapon weapon)
 		{
 			int weaponDefIndex = weapon.AttributeManager.Item.ItemDefinitionIndex;
 			if (!HasChangedPaint(player, weaponDefIndex, out var weaponInfo) || weaponInfo == null ||
 			    weaponInfo.Stickers.Count <= 0) return;
-			
-			float wearIncrement = 0.001f;
-			float currentWear = weaponInfo.Wear;
+
+			const float wearNudge = 0.001f;
+			float baseWear = weaponInfo.Wear;
+			// El empujón va hacia arriba salvo en el tope: saturarlo en 1.0 dejaría los
+			// dos lados del toggle en el mismo número, el cliente no vería cambio y el
+			// composite no se rehace. Con wear 1.0 se empuja para abajo.
+			float nudgedWear = baseWear + wearNudge <= 1.0f ? baseWear + wearNudge : baseWear - wearNudge;
 
 			var playerWear = _temporaryPlayerWeaponWear.GetOrAdd(player.Slot, _ => new ConcurrentDictionary<int, float>());
 
-			float incrementedWear = playerWear.AddOrUpdate(
+			float appliedWear = playerWear.AddOrUpdate(
 				weaponDefIndex,
-				currentWear + wearIncrement,
-				(_, oldWear) => Math.Min(oldWear + wearIncrement, 1.0f)
+				nudgedWear,
+				(_, previous) => previous.Equals(baseWear) ? nudgedWear : baseWear
 			);
 
-			weapon.FallbackWear = incrementedWear;
+			// Por los tres lugares, no sólo el fallback: si el atributo econ se quedara con
+			// el wear anterior, el cliente compondría contra un valor que el servidor ya no
+			// quiso mandar y el toggle dejaría de verse como un cambio de item.
+			ApplyWear(weapon, appliedWear);
+		}
+
+		/// <summary>
+		/// El wear vive en tres lugares que tienen que coincidir: la variable fallback y el
+		/// atributo "set item texture wear" de las DOS listas. Escribir uno solo deja al
+		/// cliente componiendo contra un wear que el servidor nunca quiso mandar.
+		/// </summary>
+		private static void ApplyWear(CBasePlayerWeapon weapon, float wear)
+		{
+			weapon.FallbackWear = wear;
+			CAttributeListSetOrAddAttributeValueByName.Invoke(weapon.AttributeManager.Item.NetworkedDynamicAttributes.Handle, "set item texture wear", wear);
+			CAttributeListSetOrAddAttributeValueByName.Invoke(weapon.AttributeManager.Item.AttributeList.Handle, "set item texture wear", wear);
 		}
 
 		private void SetStickers(CCSPlayerController? player, CBasePlayerWeapon weapon)
@@ -389,7 +457,12 @@ namespace WeaponPaints
 			// who has no plugin glove would destroy the networked attributes of the gloves he owns
 			// in his own inventory: he would keep seeing them (predicted client side) while everyone
 			// else would render empty/default hands.
-			if (!GPlayersGlove.TryGetValue(player.Slot, out var gloveInfo) ||
+			// La falta de permiso entra por acá y no por un return arriba, a propósito: así
+			// toma el mismo camino de reset que "no tiene guante configurado". A quien se le
+			// venció el VIP con guantes ya aplicados se le devuelven los suyos en el
+			// siguiente spawn, en vez de quedarse con los del plugin hasta reconectar.
+			if (!HasSkinsAccess(player) ||
+			    !GPlayersGlove.TryGetValue(player.Slot, out var gloveInfo) ||
 			    !gloveInfo.TryGetValue(player.Team, out var gloveId) ||
 			    gloveId == 0 ||
 			    !HasChangedPaint(player, gloveId, out var weaponInfo) || weaponInfo == null)
@@ -556,6 +629,7 @@ namespace WeaponPaints
 
 		private static void GivePlayerAgent(CCSPlayerController player)
 		{
+			if (!HasSkinsAccess(player)) return;
 			if (!GPlayersAgent.TryGetValue(player.Slot, out var value)) return;
 
 			var model = player.TeamNum == 3 ? value.CT : value.T;
@@ -634,6 +708,7 @@ namespace WeaponPaints
 		private static void GivePlayerMusicKit(CCSPlayerController player)
 		{
 			if (player.IsBot) return;
+			if (!HasSkinsAccess(player)) return;
 			if (!GPlayersMusic.TryGetValue(player.Slot, out var musicInfo) ||
 			    !musicInfo.TryGetValue(player.Team, out var musicId) || musicId == 0) return;
 			
@@ -651,6 +726,7 @@ namespace WeaponPaints
 
 		private static void GivePlayerPin(CCSPlayerController player)
 		{
+			if (!HasSkinsAccess(player)) return;
 			if (!GPlayersPin.TryGetValue(player.Slot, out var pinInfo) ||
 			    !pinInfo.TryGetValue(player.Team, out var pinId)) return;
 			if (player.InventoryServices == null) return;
