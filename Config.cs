@@ -77,14 +77,19 @@ namespace WeaponPaints
 		public string SkinsLanguage { get; set; } = "en";
 
 		/// <summary>
-		/// Flag de permiso requerido para que se carguen las skins del jugador.
-		/// Vacío = sin restricción (comportamiento original: carga para todos).
+		/// Flag de permiso requerido para que se le APLIQUE al jugador su loadout
+		/// —skins, cuchillo, guantes, agente, kit de música y pin—. Vacío = sin
+		/// restricción (comportamiento original: se le aplica a todos).
 		///
-		/// Se consulta contra el AdminManager de CounterStrikeSharp, donde
-		/// HaporePermissions deja los flags ya resueltos del jugador al conectar.
-		/// Sirve para que las skins sean un beneficio VIP sin tener que borrar de
-		/// la base lo que el jugador configuró: al vencer el VIP simplemente
-		/// dejan de cargarse, y si renueva vuelve a tener su loadout intacto.
+		/// Los datos se leen de la base igual para todos; lo que el flag decide es
+		/// si se aplican. El chequeo está en la aplicación y no en la carga a
+		/// propósito: HaporePermissions publica sus flags de forma ASÍNCRONA
+		/// mientras el jugador conecta, así que al momento de cargar todavía no
+		/// existen y preguntar ahí se los negaba a todos. Ver `HasSkinsAccess`.
+		///
+		/// Sirve para que el loadout sea un beneficio VIP sin tener que borrar de
+		/// la base lo que el jugador configuró: al vencer el VIP simplemente deja
+		/// de aplicarse, y si renueva vuelve a tenerlo intacto.
 		/// </summary>
 		[JsonPropertyName("SkinsPermissionFlag")]
 		public string SkinsPermissionFlag { get; set; } = "";

@@ -30,6 +30,15 @@ namespace WeaponPaints
 		///
 		/// Como se evalúa en cada aplicación, un VIP que vence deja de recibir sus items
 		/// en el siguiente spawn, sin necesidad de reconectar ni de borrar nada.
+		///
+		/// Deliberadamente NO cachea. El AdminManager no distingue "todavía no resolví a este
+		/// jugador" de "este jugador no tiene permisos": las dos cosas son ausencia en el mismo
+		/// diccionario. Cualquier caché que intente cubrir la ventana inicial termina siendo el
+		/// estado permanente para todo jugador común, y deja pegado un `true` viejo cuando a un
+		/// VIP le limpian los permisos — justo el caso que tiene que cortar.
+		///
+		/// La ventana inicial se cubre reaplicando, no adivinando: ver
+		/// <see cref="ResolveSkinsAccessThenApply"/>.
 		/// </summary>
 		internal static bool HasSkinsAccess(CCSPlayerController? player)
 		{
@@ -705,13 +714,35 @@ namespace WeaponPaints
 			}
 		}
 
+		/// <summary>
+		/// Resuelve qué kit corresponde al bando en el que está el jugador. Dos estados que hay
+		/// que mantener separados y que un `TryGetValue(...) || id == 0` confunde:
+		///
+		/// - La clave NO está: nunca eligió nada para ese bando. El menú escribe sólo el bando
+		///   actual salvo que esté sin equipo (Commands.cs), así que esto es lo normal, no un
+		///   caso viejo. Ahí sí vale usar el kit del otro bando: es el que el jugador eligió.
+		/// - La clave está en 0: eligió "None" explícitamente para ese bando. Se respeta y no se
+		///   toca nada, que es lo que deja sonar el kit de su propio inventario.
+		///
+		/// Lo usan los dos canales de audio (m_iMusicKitID y el evento round_mvp) para que no
+		/// puedan discrepar.
+		/// </summary>
+		internal static bool TryResolveMusicKit(ConcurrentDictionary<CsTeam, ushort> musicInfo, CsTeam team, out ushort musicId)
+		{
+			if (musicInfo.TryGetValue(team, out musicId))
+				return musicId != 0;
+
+			musicId = musicInfo.Values.FirstOrDefault(id => id != 0);
+			return musicId != 0;
+		}
+
 		private static void GivePlayerMusicKit(CCSPlayerController player)
 		{
 			if (player.IsBot) return;
 			if (!HasSkinsAccess(player)) return;
-			if (!GPlayersMusic.TryGetValue(player.Slot, out var musicInfo) ||
-			    !musicInfo.TryGetValue(player.Team, out var musicId) || musicId == 0) return;
-			
+			if (!GPlayersMusic.TryGetValue(player.Slot, out var musicInfo)) return;
+			if (!TryResolveMusicKit(musicInfo, player.Team, out var musicId)) return;
+
 			if (player.InventoryServices == null) return;
 
 			player.MusicKitID = musicId;

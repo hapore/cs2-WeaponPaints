@@ -467,18 +467,28 @@ public partial class WeaponPaints
 						IpAddress = p.IpAddress?.Split(":")[0]
 					};
 
-					if (!_gBCommandsAllowed || (LifeState_t)p.LifeState != LifeState_t.LIFE_ALIVE ||
-					    WeaponSync == null) return;
-					RefreshWeapons(player);
+					// Guardar NO puede depender de estar vivo. El flujo del cuchillo empuja al
+					// jugador a matarse (wp_knife_menu_kill, arriba en el menú de cuchillos), así
+					// que llegaba acá muerto y este return se comía también el guardado: la
+					// pintura quedaba sólo en memoria y se perdía al reconectar o cambiar de mapa.
+					// El menú de cuchillos sí guarda siempre, y por eso el cuchillo volvía con su
+					// modelo correcto pero vanilla.
+					if (WeaponSync != null)
+					{
+						try
+						{
+							_ = Task.Run(async () => await WeaponSync.SyncWeaponPaintsToDatabase(playerInfo));
+						}
+						catch (Exception ex)
+						{
+							Utility.Log($"Error syncing weapon paints: {ex.Message}");
+						}
+					}
 
-					try
-					{
-						_ = Task.Run(async () => await WeaponSync.SyncWeaponPaintsToDatabase(playerInfo));
-					}
-					catch (Exception ex)
-					{
-						Utility.Log($"Error syncing weapon paints: {ex.Message}");
-					}
+					// El refresco sí necesita pawn vivo y estar fuera de la ventana de fin de
+					// ronda. Si ahora no se puede, se aplica solo en el próximo spawn.
+					if (_gBCommandsAllowed && (LifeState_t)p.LifeState == LifeState_t.LIFE_ALIVE)
+						RefreshWeapons(p);
 				}
 			};
 
