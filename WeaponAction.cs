@@ -795,10 +795,15 @@ namespace WeaponPaints
 		private void UpdatePlayerEconItemId(CEconItemView econItemView)
 		{
 			var itemId = _nextItemId++;
-			
+
 			econItemView.ItemID = itemId;
-			econItemView.ItemIDLow = (uint)itemId & 0xFFFFFFFF;
-			econItemView.ItemIDHigh = (uint)itemId >> 32;
+
+			// Estas dos mitades son las que se networkean, y el cliente reconstruye el id de 64
+			// bits con ellas. `(uint)itemId >> 32` no partía nada: en C# el contador de shift
+			// sobre un uint se enmascara a 5 bits, así que `>> 32` equivale a `>> 0` y la mitad
+			// alta quedaba IGUAL a la baja, dejando un id que no coincidía con m_iItemID.
+			econItemView.ItemIDLow = (uint)(itemId & 0xFFFFFFFF);
+			econItemView.ItemIDHigh = (uint)(itemId >> 32);
 		}
 
 		private static CCSPlayerController? GetPlayerFromItemServices(CCSPlayer_ItemServices itemServices)
