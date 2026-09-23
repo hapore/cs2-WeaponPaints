@@ -141,14 +141,16 @@ public partial class WeaponPaints
 			});
 		});
 			
-		_config.Additional.CommandRefresh.ForEach(c =>
-		{
-			AddCommand($"css_{c}", "Skins refresh", (player, info) =>
-			{
-				if (!Utility.IsPlayerValid(player)) return;
-				OnCommandRefresh(player, info);
-			});
-		});
+		// Comando !wp desactivado a propósito. Se deja el código comentado para
+		// poder reactivarlo más adelante sin tener que reescribirlo.
+		// _config.Additional.CommandRefresh.ForEach(c =>
+		// {
+		// 	AddCommand($"css_{c}", "Skins refresh", (player, info) =>
+		// 	{
+		// 		if (!Utility.IsPlayerValid(player)) return;
+		// 		OnCommandRefresh(player, info);
+		// 	});
+		// });
 
 		if (Config.Additional.CommandKillEnabled)
 		{
