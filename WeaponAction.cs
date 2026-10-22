@@ -7,7 +7,6 @@ using CounterStrikeSharp.API.Modules.Timers;
 using CounterStrikeSharp.API.Modules.Utils;
 using Microsoft.Extensions.Logging;
 using System.Collections.Concurrent;
-using Newtonsoft.Json.Linq;
 
 namespace WeaponPaints
 {
@@ -93,9 +92,6 @@ namespace WeaponPaints
 			
 			weapon.AttributeManager.Item.AccountID = (uint)player.SteamID;
 			
-			List<JObject> skinInfo;
-			bool isLegacyModel;
-
 			if (_config.Additional.GiveRandomSkin &&
 			    !HasChangedPaint(player, weaponDefIndex, out _))
 			{
@@ -118,15 +114,8 @@ namespace WeaponPaints
 			
 				if (fallbackPaintKit == 0)
 					return;
-			
-				skinInfo = SkinsList
-					.Where(w => 
-						w["weapon_defindex"]?.ToObject<int>() == weaponDefIndex && 
-						w["paint"]?.ToObject<int>() == fallbackPaintKit)
-					.ToList();
-				
-				isLegacyModel = skinInfo.Count <= 0 || skinInfo[0].Value<bool>("legacy_model");
-				UpdatePlayerWeaponMeshGroupMask(player, weapon, isLegacyModel);
+
+				UpdatePlayerWeaponMeshGroupMask(player, weapon, IsLegacyModelSkin(weaponDefIndex, fallbackPaintKit));
 				return;
 			}
 
@@ -181,14 +170,7 @@ namespace WeaponPaints
 			if (weaponInfo.KeyChain != null) SetKeychain(player, weapon);
 			if (weaponInfo.Stickers.Count > 0) SetStickers(player, weapon);
 
-			skinInfo = SkinsList
-				.Where(w => 
-					w["weapon_defindex"]?.ToObject<int>() == weaponDefIndex && 
-					w["paint"]?.ToObject<int>() == fallbackPaintKit)
-				.ToList();
-				
-			isLegacyModel = skinInfo.Count <= 0 || skinInfo[0].Value<bool>("legacy_model");
-			UpdatePlayerWeaponMeshGroupMask(player, weapon, isLegacyModel);
+			UpdatePlayerWeaponMeshGroupMask(player, weapon, IsLegacyModelSkin(weaponDefIndex, fallbackPaintKit));
 		}
 		
 		// silly method to update sticker when call RefreshWeapons()
@@ -638,6 +620,33 @@ namespace WeaponPaints
 		private void UpdatePlayerWeaponMeshGroupMask(CCSPlayerController player, CBasePlayerWeapon weapon, bool isLegacy)
 		{
 			UpdateWeaponMeshGroupMask(weapon, isLegacy);
+		}
+
+		// Skins ya avisadas como faltantes, para no repetir el warning en cada spawn.
+		private static readonly ConcurrentDictionary<(int DefIndex, int Paint), byte> MissingSkinsWarned = new();
+
+		/// <summary>
+		/// La malla (legacy o nueva) sale del `legacy_model` de data/skins_{idioma}.json del servidor.
+		/// Si la skin no está ahí se asume legacy, y una skin de modelo nuevo dibujada sobre la malla
+		/// legacy sale con la textura desordenada. Pasa cada vez que sale una colección y la carpeta
+		/// data del servidor no se actualiza junto con la web, así que se avisa en el log.
+		/// </summary>
+		private bool IsLegacyModelSkin(int weaponDefIndex, int paintKit)
+		{
+			var skin = SkinsList.FirstOrDefault(w =>
+				w["weapon_defindex"]?.ToObject<int>() == weaponDefIndex &&
+				w["paint"]?.ToObject<int>() == paintKit);
+
+			if (skin != null)
+				return skin.Value<bool>("legacy_model");
+
+			if (MissingSkinsWarned.TryAdd((weaponDefIndex, paintKit), 0))
+				Logger.LogWarning(
+					"Skin {Paint} (weapon {DefIndex}) is missing from data/skins_{Language}.json, falling back to the legacy model. " +
+					"Update the plugin's data folder or new skins will render with scrambled textures.",
+					paintKit, weaponDefIndex, _config.SkinsLanguage);
+
+			return true;
 		}
 
 		private static void GivePlayerAgent(CCSPlayerController player)
