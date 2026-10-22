@@ -56,7 +56,8 @@ namespace WeaponPaints
 			if (!HasSkinsAccess(player)) return;
 			if (!GPlayerWeaponsInfo.TryGetValue(player.Slot, out _)) return;
 			
-			bool isKnife = weapon.DesignerName.Contains("knife") || weapon.DesignerName.Contains("bayonet");
+			var designerName = weapon.DesignerName ?? "";
+			bool isKnife = designerName.Contains("knife") || designerName.Contains("bayonet");
 			
 			switch (isKnife)
 			{
@@ -405,6 +406,7 @@ namespace WeaponPaints
 			AddTimer(0.23f, () =>
 					{
 						if (!_gBCommandsAllowed) return;
+						if (!player.IsValid || !player.PawnIsAlive || player.PlayerPawn.Value == null) return;
 
 						if (!PlayerHasKnife(player) && hasKnife)
 						{
@@ -439,6 +441,8 @@ namespace WeaponPaints
 						{
 							try
 							{
+								if (!newWeapon.IsValid || !player.IsValid) return;
+
 								newWeapon.Clip1 = ammo.Item1;
 								newWeapon.ReserveAmmo[0] = ammo.Item2;
 
@@ -809,7 +813,7 @@ namespace WeaponPaints
 		private static CCSPlayerController? GetPlayerFromItemServices(CCSPlayer_ItemServices itemServices)
 		{
 			var pawn = itemServices.Pawn.Value;
-			if (!pawn.IsValid || !pawn.Controller.IsValid || pawn.Controller.Value == null) return null;
+			if (pawn == null || !pawn.IsValid || !pawn.Controller.IsValid || pawn.Controller.Value == null) return null;
 			var player = new CCSPlayerController(pawn.Controller.Value.Handle);
 			return !Utility.IsPlayerValid(player) ? null : player;
 		}
