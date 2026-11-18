@@ -476,32 +476,77 @@
     },
     {
         "id": "98",
-        "name": "音乐盒 | ALRT, DOPAMINE HIT",
-        "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuNHeF8Wklpcmtu120GR6hy8O5-3MJ7Pb6PaY_I_bBXjHJmbd1s7Y8FyrkwEty5jjS1J_3JrXfbNYF"
+        "name": "音乐盒 | ALRT, 多巴胺冲击",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-98.png"
     },
     {
         "id": "99",
-        "name": "音乐盒 | Altare, Change My Mind",
-        "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuNHeD5ERwy9elpFq3Fx6hmJLlrHAJv_eqOKI1JKSVWDXGkLovtLJoF3Hik00htTzWyt-3MSXAv8iGC0E"
+        "name": "音乐盒 | Altare, 吾心不移",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-99.png"
     },
     {
         "id": "100",
-        "name": "音乐盒 | borne, Give It To Me",
-        "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuN3SF61NKpNa66VrjQhigmpCx-Xdf7qWvO_0_IfHBCmHCkrcm6LgwS3vkzUlzsD_Vm8HpLywQpLob3g"
+        "name": "音乐盒 | borne, 给我",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-100.png"
     },
     {
         "id": "101",
-        "name": "音乐盒 | Pirapus, EVERYNITE",
-        "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJXKF5EZg57ikuxewRUmkmMaw_yZY6qf3OPY6JKeRD2XIk78m5udtS3G1xhx-tT-Hy96obzvJOYRCqud0"
+        "name": "音乐盒 | Pirapus, 每夜",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-101.png"
     },
     {
         "id": "102",
-        "name": "音乐盒 | Repiet & Julia Kleijn, On And On",
-        "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJ36H7FNhy9elpFu3QkXyyZe3pHcI6_D8bPI0cvLCXzTCw7ovs7RtGXjhzEl-6z6Emda3MSXAtLvhCgA"
+        "name": "音乐盒 | Repiet & Julia Kleijn, 循环不息",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-102.png"
     },
     {
         "id": "103",
-        "name": "音乐盒 | ShockOne, Voices",
-        "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJnOY5l16-oLLugipEE7zmM63-SFfuKv-MPc6eKfLWDHJk74l6eJoHC23zEh-t2yHyN_7dWXXMFFiTTCrFg"
+        "name": "音乐盒 | ShockOne, 声流",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-103.png"
+    },
+    {
+        "id": "104",
+        "name": "音乐盒 | Starjunk 95，工业忆夕",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-104.png"
+    },
+    {
+        "id": "105",
+        "name": "音乐盒 | ALLEYCVT & LEVEL UP, 相信",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-105.png"
+    },
+    {
+        "id": "106",
+        "name": "音乐盒 | Arcando & Pirapus, 超声波",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-106.png"
+    },
+    {
+        "id": "107",
+        "name": "音乐盒 | DJ DIESEL & Hairitage, 甩起头来",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-107.png"
+    },
+    {
+        "id": "108",
+        "name": "音乐盒 | F.O.O.L, 狂徒",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-108.png"
+    },
+    {
+        "id": "109",
+        "name": "音乐盒 | Noisestorm, 横行无忌",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-109.png"
+    },
+    {
+        "id": "110",
+        "name": "音乐盒 | Pegboard Nerds, 断开连接",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-110.png"
+    },
+    {
+        "id": "111",
+        "name": "音乐盒 | Tristam & Braken, 翱翔",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-111.png"
+    },
+    {
+        "id": "112",
+        "name": "音乐盒 | Vicetone & Cozi Zuehlsdorff, 内华达",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-112.png"
     }
 ]

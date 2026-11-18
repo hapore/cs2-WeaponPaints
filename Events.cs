@@ -125,6 +125,9 @@ namespace WeaponPaints
 			if (Config.Additional.AgentEnabled)
 			{
 				GPlayersAgent.TryRemove(player.Slot, out _);
+				OriginalPawnModel.TryRemove(player.Slot, out _);
+				PluginAppliedAgent.TryRemove(player.Slot, out _);
+				OriginalAgentCharacter.TryRemove(player.Slot, out _);
 			}
 			if (Config.Additional.MusicEnabled)
 			{

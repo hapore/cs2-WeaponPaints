@@ -464,9 +464,14 @@ namespace WeaponPaints
 			{
 				// Only undo what we applied ourselves ("Gloves | Default", team without a glove, ...).
 				// If we never touched this pawn there is nothing to reset and clearing the item here
-				// would destroy the gloves the player owns in his own inventory.
-				if (GPlayersGloveApplied.TryRemove(player.Slot, out _))
+				// would destroy the gloves the player owns in his own inventory. Besides our own
+				// tracking, a glove with a def index but no AccountID is one the plugin wrote: that
+				// also catches a pawn that kept it across a plugin reload, when the tracking is empty.
+				var applied = GPlayersGloveApplied.TryRemove(player.Slot, out _);
+				if (applied || IsPluginGlove(pawn.EconGloves.ItemDefinitionIndex, pawn.EconGloves.AccountID))
 					ResetPlayerGloves(player, pawn);
+				else if (pawn.EconGloves.ItemDefinitionIndex == 0)
+					ShowAgentDefaultHands(pawn);
 
 				return;
 			}
@@ -478,8 +483,10 @@ namespace WeaponPaints
 			item.NetworkedDynamicAttributes.Attributes.RemoveAll();
 			item.AttributeList.Attributes.RemoveAll();
 
-			//force gloves model refresh to prevent model overlap
-			player.ExecuteClientCommand("lastinv");
+			// Without UpdateItemView, fall back to forcing a weapon switch so the glove gets redrawn.
+			var canUpdateItemView = UpdateItemView != null;
+			if (!canUpdateItemView)
+				player.ExecuteClientCommand("lastinv");
 			Instance.AddTimer(0.08f, () =>
 			{	
 				try
@@ -517,8 +524,13 @@ namespace WeaponPaints
 					// keeps the state the pawn was spawned with.
 					Utilities.SetStateChanged(currentPawn, "CCSPlayerPawn", "m_EconGloves");
 
-					//force gloves model refresh to prevent model overlap
-					player.ExecuteClientCommand("lastinv");
+					// Re-publish the glove so teammates see it at once (upstream issue #548: they saw it
+					// wrong at round start until the player switched weapons). Without UpdateItemView,
+					// force a weapon switch so the glove model gets refreshed and does not overlap.
+					if (canUpdateItemView && TryUpdateItemView(currentItem))
+						Utilities.SetStateChanged(player, "CCSPlayerController", "m_pInventoryServices");
+					else
+						player.ExecuteClientCommand("lastinv");
 
 					// hides the hands baked into the player model so the econ glove is the only
 					// thing rendered on the world model (what the other players look at)
@@ -559,8 +571,14 @@ namespace WeaponPaints
 				item.Initialized = false;
 
 				Utilities.SetStateChanged(pawn, "CCSPlayerPawn", "m_EconGloves");
+				unchecked
+				{
+					pawn.EconGlovesChanged++;
+				}
+				Utilities.SetStateChanged(pawn, "CCSPlayerPawn", "m_nEconGlovesChanged");
 
 				SetBodygroup(pawn, "default_gloves", 0);
+				ShowAgentDefaultHands(pawn);
 
 				player.ExecuteClientCommand("lastinv");
 				SetBodygroup(pawn, "first_or_third_person", 0);
@@ -577,6 +595,55 @@ namespace WeaponPaints
 				}, TimerFlags.STOP_ON_MAPCHANGE);
 			}
 			catch (Exception) { }
+		}
+
+		private bool TryUpdateItemView(CEconItemView item)
+		{
+			try
+			{
+				UpdateItemView?.Invoke(item.Handle, nint.Zero);
+				return UpdateItemView != null;
+			}
+			catch (Exception ex)
+			{
+				Logger.LogWarning("UpdateItemView failed (def {DefinitionIndex}): {Message}", item.ItemDefinitionIndex, ex.Message);
+				return false;
+			}
+		}
+
+		// Inventory gloves carry the owner's AccountID; gloves the plugin writes never set it.
+		// A glove item with a def index but no account is therefore one the plugin applied.
+		private static bool IsPluginGlove(ushort itemDefinitionIndex, uint accountId) =>
+			itemDefinitionIndex != 0 && accountId == 0;
+
+		// Agent models hide their built-in hands through the "default_gloves" bodygroup while an
+		// econ glove is worn, and nothing shows them again when the glove is removed or the pawn
+		// respawns without one: empty sleeves. The "SetBodygroup" input does not change this group,
+		// so write the mesh group mask directly. Agent models list default_gloves first:
+		// bit 0 = visible, bit 1 = hidden.
+		private void ShowAgentDefaultHands(CCSPlayerPawn pawn)
+		{
+			ApplyDefaultHandsMask(pawn);
+			// A model refresh right after the glove change can re-publish the old mask; apply once more.
+			AddTimer(0.3f, () => ApplyDefaultHandsMask(pawn), TimerFlags.STOP_ON_MAPCHANGE);
+		}
+
+		private static void ApplyDefaultHandsMask(CCSPlayerPawn pawn)
+		{
+			if (!pawn.IsValid || pawn.EconGloves.ItemDefinitionIndex != 0)
+				return;
+
+			var state = pawn.CBodyComponent?.SceneNode?.GetSkeletonInstance()?.ModelState;
+			if (state == null)
+				return;
+
+			const ulong handsVisible = 0x1, handsHidden = 0x2;
+			var mask = state.MeshGroupMask;
+			if ((mask & handsHidden) == 0)
+				return;
+
+			state.MeshGroupMask = (mask & ~handsHidden) | handsVisible;
+			Utilities.SetStateChanged(pawn, "CBaseEntity", "m_CBodyComponent");
 		}
 
 		private static int GetRandomPaint(int defindex)
@@ -655,7 +722,6 @@ namespace WeaponPaints
 			if (!GPlayersAgent.TryGetValue(player.Slot, out var value)) return;
 
 			var model = player.TeamNum == 3 ? value.CT : value.T;
-			if (string.IsNullOrEmpty(model)) return;
 
 			if (player.PlayerPawn.Value == null)
 				return;
@@ -671,9 +737,36 @@ namespace WeaponPaints
 					if (pawn == null || !pawn.IsValid)
 						return;
 
-					pawn.SetModel(
-						$"agents/models/{model}.vmdl"
-					);
+					var currentModel = pawn.CBodyComponent?.SceneNode?.GetSkeletonInstance()?.ModelState.ModelName.ToString();
+
+					if (string.IsNullOrEmpty(model) || model == "null")
+					{
+						// "Agent | Default". The pawn keeps the plugin agent across respawns, so put
+						// back the model it wore before the plugin first changed it, together with the
+						// character and voice bank that went with it.
+						if (IsPluginAppliedAgent(player.Slot, currentModel) &&
+						    OriginalPawnModel.TryGetValue(player.Slot, out var defaultModel))
+						{
+							pawn.SetModel(defaultModel);
+							PluginAppliedAgent.TryRemove(player.Slot, out _);
+							RestoreAgentCharacter(player, pawn);
+						}
+						return;
+					}
+
+					// Remember the model the game gave the pawn (inventory agent or map default) before
+					// the first override. CS2 serves every agent, the stock defaults included, from
+					// "agents/models/...", so only the exact model the plugin set is skipped.
+					if (!string.IsNullOrEmpty(currentModel) && currentModel.EndsWith(".vmdl") &&
+					    !IsPluginAppliedAgent(player.Slot, currentModel))
+					{
+						OriginalPawnModel[player.Slot] = currentModel;
+						SaveOriginalAgentCharacter(player, pawn);
+					}
+
+					var appliedModel = $"agents/models/{model}.vmdl";
+					pawn.SetModel(appliedModel);
+					PluginAppliedAgent[player.Slot] = appliedModel;
 
 					ApplyAgentCharacter(player, pawn, model);
 				});
@@ -724,6 +817,49 @@ namespace WeaponPaints
 			catch (Exception ex)
 			{
 				Utility.Log($"[agent voice] failed to set vo_prefix for agent {defIndex}: {ex.Message}");
+			}
+		}
+
+		// The character fields ApplyAgentCharacter overwrites, as the game left them before the
+		// plugin first set an agent on this pawn. Saved next to OriginalPawnModel.
+		private static void SaveOriginalAgentCharacter(CCSPlayerController player, CCSPlayerPawn pawn)
+		{
+			try
+			{
+				OriginalAgentCharacter[player.Slot] = (
+					pawn.CharacterDefIndex,
+					player.PawnCharacterDefIndex,
+					Schema.GetString(pawn.Handle, "CCSPlayerPawn", "m_strVOPrefix"),
+					pawn.HasFemaleVoice);
+			}
+			catch (Exception)
+			{
+			}
+		}
+
+		// "Agent | Default" puts the original model back; without this the pawn would keep the
+		// character and voice bank of the plugin agent it just took off.
+		private static void RestoreAgentCharacter(CCSPlayerController player, CCSPlayerPawn pawn)
+		{
+			if (!OriginalAgentCharacter.TryRemove(player.Slot, out var original))
+				return;
+
+			try
+			{
+				pawn.CharacterDefIndex = original.CharacterDefIndex;
+				Utilities.SetStateChanged(pawn, "CCSPlayerPawn", "m_nCharacterDefIndex");
+
+				player.PawnCharacterDefIndex = original.ControllerCharacterDefIndex;
+				Utilities.SetStateChanged(player, "CCSPlayerController", "m_nPawnCharacterDefIndex");
+
+				Schema.SetString(pawn.Handle, "CCSPlayerPawn", "m_strVOPrefix", original.VoPrefix);
+				Utilities.SetStateChanged(pawn, "CCSPlayerPawn", "m_strVOPrefix");
+
+				pawn.HasFemaleVoice = original.FemaleVoice;
+				Utilities.SetStateChanged(pawn, "CCSPlayerPawn", "m_bHasFemaleVoice");
+			}
+			catch (Exception)
+			{
 			}
 		}
 

@@ -10,14 +10,6 @@
     {
         "weapon_defindex": 7,
         "weapon_name": "weapon_ak47",
-        "paint": "1466",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ak47-1466.png",
-        "paint_name": "AK-47 | Consequence of the Jinn",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 7,
-        "weapon_name": "weapon_ak47",
         "paint": "1449",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ak47-1449.png",
         "paint_name": "AK-47 | AUTOEXEC",
@@ -28,7 +20,7 @@
         "weapon_name": "weapon_ak47",
         "paint": "1425",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ak47-1425.png",
-        "paint_name": "AK-47 | Crane Flight",
+        "paint_name": "AK-47 | Voo do Grou",
         "legacy_model": false
     },
     {
@@ -37,6 +29,14 @@
         "paint": "1207",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ak47-1207.png",
         "paint_name": "AK-47 | Fúria Ardente",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 7,
+        "weapon_name": "weapon_ak47",
+        "paint": "1466",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ak47-1466.png",
+        "paint_name": "AK-47 | Consequência do Gênio",
         "legacy_model": false
     },
     {
@@ -380,7 +380,7 @@
         "weapon_name": "weapon_ak47",
         "paint": "1179",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ak47-1179.png",
-        "paint_name": "AK-47 | Polycam Oliva",
+        "paint_name": "AK-47 | Policamuflagem Oliva",
         "legacy_model": false
     },
     {
@@ -506,22 +506,6 @@
     {
         "weapon_defindex": 8,
         "weapon_name": "weapon_aug",
-        "paint": "1464",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_aug-1464.png",
-        "paint_name": "AUG | Lapis Lazuli",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 8,
-        "weapon_name": "weapon_aug",
-        "paint": "1452",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_aug-1452.png",
-        "paint_name": "AUG | Signal Scanner",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 8,
-        "weapon_name": "weapon_aug",
         "paint": "246",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_aug-246.png",
         "paint_name": "AUG | Âmbar",
@@ -605,6 +589,22 @@
         "paint": "1198",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_aug-1198.png",
         "paint_name": "AUG | Sentinela de Aço",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 8,
+        "weapon_name": "weapon_aug",
+        "paint": "1452",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_aug-1452.png",
+        "paint_name": "AUG | Radar de Sinais",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 8,
+        "weapon_name": "weapon_aug",
+        "paint": "1464",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_aug-1464.png",
+        "paint_name": "AUG | Lápis-Lazúli",
         "legacy_model": false
     },
     {
@@ -882,30 +882,6 @@
     {
         "weapon_defindex": 9,
         "weapon_name": "weapon_awp",
-        "paint": "1465",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_awp-1465.png",
-        "paint_name": "AWP | Sovereign Flame",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 9,
-        "weapon_name": "weapon_awp",
-        "paint": "1467",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_awp-1467.png",
-        "paint_name": "AWP | Black Box",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 9,
-        "weapon_name": "weapon_awp",
-        "paint": "1422",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_awp-1422.png",
-        "paint_name": "AWP | Queen's Gambit",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 9,
-        "weapon_name": "weapon_awp",
         "paint": "1026",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_awp-1026.png",
         "paint_name": "AWP | Degradê",
@@ -962,6 +938,14 @@
     {
         "weapon_defindex": 9,
         "weapon_name": "weapon_awp",
+        "paint": "1467",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_awp-1467.png",
+        "paint_name": "AWP | Caixa Preta",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 9,
+        "weapon_name": "weapon_awp",
         "paint": "1346",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_awp-1346.png",
         "paint_name": "AWP | Gelo Compacto",
@@ -981,6 +965,22 @@
         "paint": "1206",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_awp-1206.png",
         "paint_name": "AWP | Cadeia de Caracteres",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 9,
+        "weapon_name": "weapon_awp",
+        "paint": "1422",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_awp-1422.png",
+        "paint_name": "AWP | Gambito da Rainha",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 9,
+        "weapon_name": "weapon_awp",
+        "paint": "1465",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_awp-1465.png",
+        "paint_name": "AWP | Chama Soberana",
         "legacy_model": false
     },
     {
@@ -1397,7 +1397,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-413.png",
         "paint_name": "Baioneta ★ | Mármore Desbotado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 500,
@@ -1429,7 +1429,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-59.png",
         "paint_name": "Baioneta ★ | Massacre",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 500,
@@ -1437,7 +1437,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-409.png",
         "paint_name": "Baioneta ★ | Dente de Tigre",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 500,
+        "weapon_name": "weapon_bayonet",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-1480.png",
+        "paint_name": "Baioneta ★ | Aço Azul",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 500,
@@ -1453,7 +1461,15 @@
         "paint": "410",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-410.png",
         "paint_name": "Baioneta ★ | Aço de Damasco",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 500,
+        "weapon_name": "weapon_bayonet",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-1481.png",
+        "paint_name": "Baioneta ★ | Manchado",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 500,
@@ -1462,6 +1478,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-43.png",
         "paint_name": "Baioneta ★ | Manchado",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 500,
+        "weapon_name": "weapon_bayonet",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-1482.png",
+        "paint_name": "Baioneta ★ | Aquecimento de Aço",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 500,
@@ -1477,7 +1501,7 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-414.png",
         "paint_name": "Baioneta ★ | Revestimento Enferrujado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 500,
@@ -1506,10 +1530,26 @@
     {
         "weapon_defindex": 500,
         "weapon_name": "weapon_bayonet",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-1478.png",
+        "paint_name": "Baioneta ★ | Camuflagem Digital — Floresta",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 500,
+        "weapon_name": "weapon_bayonet",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-5.png",
         "paint_name": "Baioneta ★ | Camuflagem Digital — Floresta",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 500,
+        "weapon_name": "weapon_bayonet",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-1483.png",
+        "paint_name": "Baioneta ★ | Floresta Boreal",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 500,
@@ -1526,6 +1566,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-578.png",
         "paint_name": "Baioneta ★ | Águas Claras",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 500,
+        "weapon_name": "weapon_bayonet",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-1479.png",
+        "paint_name": "Baioneta ★ | Teia Rubra",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 500,
@@ -1586,22 +1634,6 @@
     {
         "weapon_defindex": 26,
         "weapon_name": "weapon_bizon",
-        "paint": "1472",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bizon-1472.png",
-        "paint_name": "PP-Bizon | Traitor",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 26,
-        "weapon_name": "weapon_bizon",
-        "paint": "1418",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bizon-1418.png",
-        "paint_name": "PP-Bizon | RMX",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 26,
-        "weapon_name": "weapon_bizon",
         "paint": "1083",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bizon-1083.png",
         "paint_name": "PP-Bizon | Disjuntor",
@@ -1642,6 +1674,22 @@
     {
         "weapon_defindex": 26,
         "weapon_name": "weapon_bizon",
+        "paint": "1418",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bizon-1418.png",
+        "paint_name": "PP-Bizon | RMX",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 26,
+        "weapon_name": "weapon_bizon",
+        "paint": "1472",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bizon-1472.png",
+        "paint_name": "PP-Bizon | Traidora",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 26,
+        "weapon_name": "weapon_bizon",
         "paint": "349",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bizon-349.png",
         "paint_name": "PP-Bizon | Osíris",
@@ -1677,7 +1725,7 @@
         "paint": "542",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bizon-542.png",
         "paint_name": "PP-Bizon | Julgamento de Anúbis",
-        "legacy_model": false
+        "legacy_model": true
     },
     {
         "weapon_defindex": 26,
@@ -1906,14 +1954,6 @@
     {
         "weapon_defindex": 63,
         "weapon_name": "weapon_cz75a",
-        "paint": "1443",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_cz75a-1443.png",
-        "paint_name": "CZ75-Auto | Hydraulics",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 63,
-        "weapon_name": "weapon_cz75a",
         "paint": "298",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_cz75a-298.png",
         "paint_name": "CZ75-Auto | Brilho Militar",
@@ -2066,6 +2106,14 @@
     {
         "weapon_defindex": 63,
         "weapon_name": "weapon_cz75a",
+        "paint": "1443",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_cz75a-1443.png",
+        "paint_name": "CZ75-Auto | Hidráulica",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 63,
+        "weapon_name": "weapon_cz75a",
         "paint": "687",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_cz75a-687.png",
         "paint_name": "CZ75-Auto | Gatática",
@@ -2205,22 +2253,6 @@
         "paint": 0,
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_deagle.png",
         "paint_name": "Desert Eagle  | Default",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 1,
-        "weapon_name": "weapon_deagle",
-        "paint": "1458",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_deagle-1458.png",
-        "paint_name": "Desert Eagle | Eastern Enigma",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 1,
-        "weapon_name": "weapon_deagle",
-        "paint": "1430",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_deagle-1430.png",
-        "paint_name": "Desert Eagle | Firebreathing",
         "legacy_model": false
     },
     {
@@ -2458,6 +2490,22 @@
     {
         "weapon_defindex": 1,
         "weapon_name": "weapon_deagle",
+        "paint": "1458",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_deagle-1458.png",
+        "paint_name": "Desert Eagle | Enigma Oriental",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 1,
+        "weapon_name": "weapon_deagle",
+        "paint": "1430",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_deagle-1430.png",
+        "paint_name": "Desert Eagle | Respiração do Fogo",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 1,
+        "weapon_name": "weapon_deagle",
         "paint": "1189",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_deagle-1189.png",
         "paint_name": "Desert Eagle | Ataque da Serpente",
@@ -2573,14 +2621,6 @@
         "paint": 0,
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_elite.png",
         "paint_name": "Berettas Duplas  | Default",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 2,
-        "weapon_name": "weapon_elite",
-        "paint": "1459",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_elite-1459.png",
-        "paint_name": "Dual Berettas | Mystic Conjunction",
         "legacy_model": false
     },
     {
@@ -2725,6 +2765,14 @@
         "paint": "112",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_elite-112.png",
         "paint_name": "Berettas Duplas | Ataque Aquático",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 2,
+        "weapon_name": "weapon_elite",
+        "paint": "1459",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_elite-1459.png",
+        "paint_name": "Berettas Duplas | Conjunção Mística",
         "legacy_model": false
     },
     {
@@ -2930,22 +2978,6 @@
     {
         "weapon_defindex": 10,
         "weapon_name": "weapon_famas",
-        "paint": "1461",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_famas-1461.png",
-        "paint_name": "FAMAS | Snake Song",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 10,
-        "weapon_name": "weapon_famas",
-        "paint": "1477",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_famas-1477.png",
-        "paint_name": "FAMAS | Corp Defense",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 10,
-        "weapon_name": "weapon_famas",
         "paint": "1066",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_famas-1066.png",
         "paint_name": "FAMAS | Fiação Defeituosa",
@@ -3077,6 +3109,22 @@
         "paint": "1184",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_famas-1184.png",
         "paint_name": "FAMAS | Onda Diferente",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 10,
+        "weapon_name": "weapon_famas",
+        "paint": "1477",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_famas-1477.png",
+        "paint_name": "FAMAS | Defesa Corporativa",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 10,
+        "weapon_name": "weapon_famas",
+        "paint": "1461",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_famas-1461.png",
+        "paint_name": "FAMAS | Canto da Serpente",
         "legacy_model": false
     },
     {
@@ -3290,22 +3338,6 @@
     {
         "weapon_defindex": 3,
         "weapon_name": "weapon_fiveseven",
-        "paint": "1457",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_fiveseven-1457.png",
-        "paint_name": "Five-SeveN | Desert Seal",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 3,
-        "weapon_name": "weapon_fiveseven",
-        "paint": "1429",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_fiveseven-1429.png",
-        "paint_name": "Five-SeveN | Dark Polymer",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 3,
-        "weapon_name": "weapon_fiveseven",
         "paint": "1002",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_fiveseven-1002.png",
         "paint_name": "Five-SeveN | Os Homi",
@@ -3466,9 +3498,25 @@
     {
         "weapon_defindex": 3,
         "weapon_name": "weapon_fiveseven",
+        "paint": "1457",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_fiveseven-1457.png",
+        "paint_name": "Five-SeveN | Selo Desértico",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 3,
+        "weapon_name": "weapon_fiveseven",
         "paint": "1168",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_fiveseven-1168.png",
         "paint_name": "Five-SeveN | Híbrida",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 3,
+        "weapon_name": "weapon_fiveseven",
+        "paint": "1429",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_fiveseven-1429.png",
+        "paint_name": "Five-SeveN | Polímero Roxo",
         "legacy_model": false
     },
     {
@@ -3882,14 +3930,6 @@
     {
         "weapon_defindex": 13,
         "weapon_name": "weapon_galilar",
-        "paint": "1434",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_galilar-1434.png",
-        "paint_name": "Galil AR | Galigator",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 13,
-        "weapon_name": "weapon_galilar",
         "paint": "246",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_galilar-246.png",
         "paint_name": "Galil AR | Âmbar",
@@ -4005,6 +4045,14 @@
         "paint": "1185",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_galilar-1185.png",
         "paint_name": "Galil AR | Controle",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 13,
+        "weapon_name": "weapon_galilar",
+        "paint": "1434",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_galilar-1434.png",
+        "paint_name": "Galil AR | Jagalil",
         "legacy_model": false
     },
     {
@@ -4237,30 +4285,6 @@
         "paint": 0,
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_glock.png",
         "paint_name": "Glock-18  | Default",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 4,
-        "weapon_name": "weapon_glock",
-        "paint": "1460",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_glock-1460.png",
-        "paint_name": "Glock-18 | Ifrit Lattice",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 4,
-        "weapon_name": "weapon_glock",
-        "paint": "1450",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_glock-1450.png",
-        "paint_name": "Glock-18 | Ghost Protocol",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 4,
-        "weapon_name": "weapon_glock",
-        "paint": "1421",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_glock-1421.png",
-        "paint_name": "Glock-18 | Fully Tuned",
         "legacy_model": false
     },
     {
@@ -4525,6 +4549,30 @@
         "paint": "129",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_glock-129.png",
         "paint_name": "Glock-18 | Dente de Ouro",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 4,
+        "weapon_name": "weapon_glock",
+        "paint": "1450",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_glock-1450.png",
+        "paint_name": "Glock-18 | Protocolo Fantasma",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 4,
+        "weapon_name": "weapon_glock",
+        "paint": "1460",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_glock-1460.png",
+        "paint_name": "Glock-18 | Grade de Ifrit",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 4,
+        "weapon_name": "weapon_glock",
+        "paint": "1421",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_glock-1421.png",
+        "paint_name": "Glock-18 | Totalmente Tunada",
         "legacy_model": false
     },
     {
@@ -5109,7 +5157,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-413.png",
         "paint_name": "Canivete Borboleta ★ | Mármore Desbotado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 515,
@@ -5141,7 +5189,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-59.png",
         "paint_name": "Canivete Borboleta ★ | Massacre",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 515,
@@ -5149,7 +5197,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-409.png",
         "paint_name": "Canivete Borboleta ★ | Dente de Tigre",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 515,
+        "weapon_name": "weapon_knife_butterfly",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-1480.png",
+        "paint_name": "Canivete Borboleta ★ | Aço Azul",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 515,
@@ -5170,10 +5226,26 @@
     {
         "weapon_defindex": 515,
         "weapon_name": "weapon_knife_butterfly",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-1481.png",
+        "paint_name": "Canivete Borboleta ★ | Manchado",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 515,
+        "weapon_name": "weapon_knife_butterfly",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-43.png",
         "paint_name": "Canivete Borboleta ★ | Manchado",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 515,
+        "weapon_name": "weapon_knife_butterfly",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-1482.png",
+        "paint_name": "Canivete Borboleta ★ | Aquecimento de Aço",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 515,
@@ -5189,7 +5261,7 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-414.png",
         "paint_name": "Canivete Borboleta ★ | Revestimento Enferrujado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 515,
@@ -5218,10 +5290,26 @@
     {
         "weapon_defindex": 515,
         "weapon_name": "weapon_knife_butterfly",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-1478.png",
+        "paint_name": "Canivete Borboleta ★ | Camuflagem Digital — Floresta",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 515,
+        "weapon_name": "weapon_knife_butterfly",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-5.png",
         "paint_name": "Canivete Borboleta ★ | Camuflagem Digital — Floresta",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 515,
+        "weapon_name": "weapon_knife_butterfly",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-1483.png",
+        "paint_name": "Canivete Borboleta ★ | Floresta Boreal",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 515,
@@ -5238,6 +5326,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-579.png",
         "paint_name": "Canivete Borboleta ★ | Águas Claras",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 515,
+        "weapon_name": "weapon_knife_butterfly",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-1479.png",
+        "paint_name": "Canivete Borboleta ★ | Teia Rubra",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 515,
@@ -5349,7 +5445,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-413.png",
         "paint_name": "Faca de Sobrevivência ★ | Mármore Desbotado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 518,
@@ -5373,7 +5469,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-59.png",
         "paint_name": "Faca de Sobrevivência ★ | Massacre",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 518,
@@ -5381,7 +5477,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-409.png",
         "paint_name": "Faca de Sobrevivência ★ | Dente de Tigre",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 518,
+        "weapon_name": "weapon_knife_canis",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-1480.png",
+        "paint_name": "Faca de Sobrevivência ★ | Aço Azul",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 518,
@@ -5397,7 +5501,15 @@
         "paint": "410",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-410.png",
         "paint_name": "Faca de Sobrevivência ★ | Aço de Damasco",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 518,
+        "weapon_name": "weapon_knife_canis",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-1481.png",
+        "paint_name": "Faca de Sobrevivência ★ | Manchado",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 518,
@@ -5406,6 +5518,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-43.png",
         "paint_name": "Faca de Sobrevivência ★ | Manchado",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 518,
+        "weapon_name": "weapon_knife_canis",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-1482.png",
+        "paint_name": "Faca de Sobrevivência ★ | Aquecimento de Aço",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 518,
@@ -5421,7 +5541,15 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-414.png",
         "paint_name": "Faca de Sobrevivência ★ | Revestimento Enferrujado",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 518,
+        "weapon_name": "weapon_knife_canis",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-1478.png",
+        "paint_name": "Faca de Sobrevivência ★ | Camuflagem Digital — Floresta",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 518,
@@ -5434,10 +5562,26 @@
     {
         "weapon_defindex": 518,
         "weapon_name": "weapon_knife_canis",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-1483.png",
+        "paint_name": "Faca de Sobrevivência ★ | Floresta Boreal",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 518,
+        "weapon_name": "weapon_knife_canis",
         "paint": "77",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-77.png",
         "paint_name": "Faca de Sobrevivência ★ | Floresta Boreal",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 518,
+        "weapon_name": "weapon_knife_canis",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-1479.png",
+        "paint_name": "Faca de Sobrevivência ★ | Teia Rubra",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 518,
@@ -5549,7 +5693,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-413.png",
         "paint_name": "Faca de Cordame ★ | Mármore Desbotado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 517,
@@ -5573,7 +5717,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-59.png",
         "paint_name": "Faca de Cordame ★ | Massacre",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 517,
@@ -5581,7 +5725,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-409.png",
         "paint_name": "Faca de Cordame ★ | Dente de Tigre",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 517,
+        "weapon_name": "weapon_knife_cord",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-1480.png",
+        "paint_name": "Faca de Cordame ★ | Aço Azul",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 517,
@@ -5597,7 +5749,15 @@
         "paint": "410",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-410.png",
         "paint_name": "Faca de Cordame ★ | Aço de Damasco",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 517,
+        "weapon_name": "weapon_knife_cord",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-1481.png",
+        "paint_name": "Faca de Cordame ★ | Manchado",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 517,
@@ -5606,6 +5766,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-43.png",
         "paint_name": "Faca de Cordame ★ | Manchado",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 517,
+        "weapon_name": "weapon_knife_cord",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-1482.png",
+        "paint_name": "Faca de Cordame ★ | Aquecimento de Aço",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 517,
@@ -5621,7 +5789,15 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-414.png",
         "paint_name": "Faca de Cordame ★ | Revestimento Enferrujado",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 517,
+        "weapon_name": "weapon_knife_cord",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-1478.png",
+        "paint_name": "Faca de Cordame ★ | Camuflagem Digital — Floresta",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 517,
@@ -5634,10 +5810,26 @@
     {
         "weapon_defindex": 517,
         "weapon_name": "weapon_knife_cord",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-1483.png",
+        "paint_name": "Faca de Cordame ★ | Floresta Boreal",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 517,
+        "weapon_name": "weapon_knife_cord",
         "paint": "77",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-77.png",
         "paint_name": "Faca de Cordame ★ | Floresta Boreal",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 517,
+        "weapon_name": "weapon_knife_cord",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-1479.png",
+        "paint_name": "Faca de Cordame ★ | Teia Rubra",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 517,
@@ -5709,7 +5901,15 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_css-59.png",
         "paint_name": "Faca Clássica ★ | Massacre",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 503,
+        "weapon_name": "weapon_knife_css",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_css-1480.png",
+        "paint_name": "Faca Clássica ★ | Aço Azul",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 503,
@@ -5722,10 +5922,26 @@
     {
         "weapon_defindex": 503,
         "weapon_name": "weapon_knife_css",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_css-1481.png",
+        "paint_name": "Faca Clássica ★ | Manchado",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 503,
+        "weapon_name": "weapon_knife_css",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_css-43.png",
         "paint_name": "Faca Clássica ★ | Manchado",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 503,
+        "weapon_name": "weapon_knife_css",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_css-1482.png",
+        "paint_name": "Faca Clássica ★ | Aquecimento de Aço",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 503,
@@ -5738,6 +5954,14 @@
     {
         "weapon_defindex": 503,
         "weapon_name": "weapon_knife_css",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_css-1478.png",
+        "paint_name": "Faca Clássica ★ | Camuflagem Digital — Floresta",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 503,
+        "weapon_name": "weapon_knife_css",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_css-5.png",
         "paint_name": "Faca Clássica ★ | Camuflagem Digital — Floresta",
@@ -5746,10 +5970,26 @@
     {
         "weapon_defindex": 503,
         "weapon_name": "weapon_knife_css",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_css-1483.png",
+        "paint_name": "Faca Clássica ★ | Floresta Boreal",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 503,
+        "weapon_name": "weapon_knife_css",
         "paint": "77",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_css-77.png",
         "paint_name": "Faca Clássica ★ | Floresta Boreal",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 503,
+        "weapon_name": "weapon_knife_css",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_css-1479.png",
+        "paint_name": "Faca Clássica ★ | Teia Rubra",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 503,
@@ -5893,7 +6133,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-413.png",
         "paint_name": "Canivete Falchion ★ | Mármore Desbotado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 512,
@@ -5925,7 +6165,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-59.png",
         "paint_name": "Canivete Falchion ★ | Massacre",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 512,
@@ -5933,7 +6173,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-409.png",
         "paint_name": "Canivete Falchion ★ | Dente de Tigre",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 512,
+        "weapon_name": "weapon_knife_falchion",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-1480.png",
+        "paint_name": "Canivete Falchion ★ | Aço Azul",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 512,
@@ -5954,10 +6202,26 @@
     {
         "weapon_defindex": 512,
         "weapon_name": "weapon_knife_falchion",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-1481.png",
+        "paint_name": "Canivete Falchion ★ | Manchado",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 512,
+        "weapon_name": "weapon_knife_falchion",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-43.png",
         "paint_name": "Canivete Falchion ★ | Manchado",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 512,
+        "weapon_name": "weapon_knife_falchion",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-1482.png",
+        "paint_name": "Canivete Falchion ★ | Aquecimento de Aço",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 512,
@@ -5973,7 +6237,7 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-414.png",
         "paint_name": "Canivete Falchion ★ | Revestimento Enferrujado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 512,
@@ -6002,10 +6266,26 @@
     {
         "weapon_defindex": 512,
         "weapon_name": "weapon_knife_falchion",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-1478.png",
+        "paint_name": "Canivete Falchion ★ | Camuflagem Digital — Floresta",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 512,
+        "weapon_name": "weapon_knife_falchion",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-5.png",
         "paint_name": "Canivete Falchion ★ | Camuflagem Digital — Floresta",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 512,
+        "weapon_name": "weapon_knife_falchion",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-1483.png",
+        "paint_name": "Canivete Falchion ★ | Floresta Boreal",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 512,
@@ -6022,6 +6302,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-579.png",
         "paint_name": "Canivete Falchion ★ | Águas Claras",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 512,
+        "weapon_name": "weapon_knife_falchion",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-1479.png",
+        "paint_name": "Canivete Falchion ★ | Teia Rubra",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 512,
@@ -6173,7 +6461,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-413.png",
         "paint_name": "Canivete ★ | Mármore Desbotado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 505,
@@ -6205,7 +6493,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-59.png",
         "paint_name": "Canivete ★ | Massacre",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 505,
@@ -6213,7 +6501,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-409.png",
         "paint_name": "Canivete ★ | Dente de Tigre",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 505,
+        "weapon_name": "weapon_knife_flip",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-1480.png",
+        "paint_name": "Canivete ★ | Aço Azul",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 505,
@@ -6229,7 +6525,15 @@
         "paint": "410",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-410.png",
         "paint_name": "Canivete ★ | Aço de Damasco",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 505,
+        "weapon_name": "weapon_knife_flip",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-1481.png",
+        "paint_name": "Canivete ★ | Manchado",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 505,
@@ -6238,6 +6542,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-43.png",
         "paint_name": "Canivete ★ | Manchado",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 505,
+        "weapon_name": "weapon_knife_flip",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-1482.png",
+        "paint_name": "Canivete ★ | Aquecimento de Aço",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 505,
@@ -6253,7 +6565,7 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-414.png",
         "paint_name": "Canivete ★ | Revestimento Enferrujado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 505,
@@ -6282,10 +6594,26 @@
     {
         "weapon_defindex": 505,
         "weapon_name": "weapon_knife_flip",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-1478.png",
+        "paint_name": "Canivete ★ | Camuflagem Digital — Floresta",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 505,
+        "weapon_name": "weapon_knife_flip",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-5.png",
         "paint_name": "Canivete ★ | Camuflagem Digital — Floresta",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 505,
+        "weapon_name": "weapon_knife_flip",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-1483.png",
+        "paint_name": "Canivete ★ | Floresta Boreal",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 505,
@@ -6302,6 +6630,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-578.png",
         "paint_name": "Canivete ★ | Águas Claras",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 505,
+        "weapon_name": "weapon_knife_flip",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-1479.png",
+        "paint_name": "Canivete ★ | Teia Rubra",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 505,
@@ -6453,7 +6789,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-413.png",
         "paint_name": "Faca Gut Hook ★ | Mármore Desbotado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 506,
@@ -6485,7 +6821,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-59.png",
         "paint_name": "Faca Gut Hook ★ | Massacre",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 506,
@@ -6493,7 +6829,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-409.png",
         "paint_name": "Faca Gut Hook ★ | Dente de Tigre",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 506,
+        "weapon_name": "weapon_knife_gut",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-1480.png",
+        "paint_name": "Faca Gut Hook ★ | Aço Azul",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 506,
@@ -6509,7 +6853,15 @@
         "paint": "410",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-410.png",
         "paint_name": "Faca Gut Hook ★ | Aço de Damasco",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 506,
+        "weapon_name": "weapon_knife_gut",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-1481.png",
+        "paint_name": "Faca Gut Hook ★ | Manchado",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 506,
@@ -6518,6 +6870,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-43.png",
         "paint_name": "Faca Gut Hook ★ | Manchado",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 506,
+        "weapon_name": "weapon_knife_gut",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-1482.png",
+        "paint_name": "Faca Gut Hook ★ | Aquecimento de Aço",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 506,
@@ -6533,7 +6893,7 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-414.png",
         "paint_name": "Faca Gut Hook ★ | Revestimento Enferrujado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 506,
@@ -6562,10 +6922,26 @@
     {
         "weapon_defindex": 506,
         "weapon_name": "weapon_knife_gut",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-1478.png",
+        "paint_name": "Faca Gut Hook ★ | Camuflagem Digital — Floresta",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 506,
+        "weapon_name": "weapon_knife_gut",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-5.png",
         "paint_name": "Faca Gut Hook ★ | Camuflagem Digital — Floresta",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 506,
+        "weapon_name": "weapon_knife_gut",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-1483.png",
+        "paint_name": "Faca Gut Hook ★ | Floresta Boreal",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 506,
@@ -6582,6 +6958,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-578.png",
         "paint_name": "Faca Gut Hook ★ | Águas Claras",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 506,
+        "weapon_name": "weapon_knife_gut",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-1479.png",
+        "paint_name": "Faca Gut Hook ★ | Teia Rubra",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 506,
@@ -6693,7 +7077,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-413.png",
         "paint_name": "Faca Navaja ★ | Mármore Desbotado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 520,
@@ -6717,7 +7101,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-59.png",
         "paint_name": "Faca Navaja ★ | Massacre",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 520,
@@ -6725,7 +7109,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-409.png",
         "paint_name": "Faca Navaja ★ | Dente de Tigre",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 520,
+        "weapon_name": "weapon_knife_gypsy_jackknife",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-1480.png",
+        "paint_name": "Faca Navaja ★ | Aço Azul",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 520,
@@ -6746,10 +7138,26 @@
     {
         "weapon_defindex": 520,
         "weapon_name": "weapon_knife_gypsy_jackknife",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-1481.png",
+        "paint_name": "Faca Navaja ★ | Manchado",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 520,
+        "weapon_name": "weapon_knife_gypsy_jackknife",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-43.png",
         "paint_name": "Faca Navaja ★ | Manchado",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 520,
+        "weapon_name": "weapon_knife_gypsy_jackknife",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-1482.png",
+        "paint_name": "Faca Navaja ★ | Aquecimento de Aço",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 520,
@@ -6765,7 +7173,15 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-414.png",
         "paint_name": "Faca Navaja ★ | Revestimento Enferrujado",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 520,
+        "weapon_name": "weapon_knife_gypsy_jackknife",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-1478.png",
+        "paint_name": "Faca Navaja ★ | Camuflagem Digital — Floresta",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 520,
@@ -6778,10 +7194,26 @@
     {
         "weapon_defindex": 520,
         "weapon_name": "weapon_knife_gypsy_jackknife",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-1483.png",
+        "paint_name": "Faca Navaja ★ | Floresta Boreal",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 520,
+        "weapon_name": "weapon_knife_gypsy_jackknife",
         "paint": "77",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-77.png",
         "paint_name": "Faca Navaja ★ | Floresta Boreal",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 520,
+        "weapon_name": "weapon_knife_gypsy_jackknife",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-1479.png",
+        "paint_name": "Faca Navaja ★ | Teia Rubra",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 520,
@@ -6933,7 +7365,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-413.png",
         "paint_name": "Karambit ★ | Mármore Desbotado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 507,
@@ -6965,7 +7397,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-59.png",
         "paint_name": "Karambit ★ | Massacre",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 507,
@@ -6973,7 +7405,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-409.png",
         "paint_name": "Karambit ★ | Dente de Tigre",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 507,
+        "weapon_name": "weapon_knife_karambit",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-1480.png",
+        "paint_name": "Karambit ★ | Aço Azul",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 507,
@@ -6989,7 +7429,15 @@
         "paint": "410",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-410.png",
         "paint_name": "Karambit ★ | Aço de Damasco",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 507,
+        "weapon_name": "weapon_knife_karambit",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-1481.png",
+        "paint_name": "Karambit ★ | Manchado",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 507,
@@ -6998,6 +7446,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-43.png",
         "paint_name": "Karambit ★ | Manchado",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 507,
+        "weapon_name": "weapon_knife_karambit",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-1482.png",
+        "paint_name": "Karambit ★ | Aquecimento de Aço",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 507,
@@ -7013,7 +7469,7 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-414.png",
         "paint_name": "Karambit ★ | Revestimento Enferrujado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 507,
@@ -7042,10 +7498,26 @@
     {
         "weapon_defindex": 507,
         "weapon_name": "weapon_knife_karambit",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-1478.png",
+        "paint_name": "Karambit ★ | Camuflagem Digital — Floresta",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 507,
+        "weapon_name": "weapon_knife_karambit",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-5.png",
         "paint_name": "Karambit ★ | Camuflagem Digital — Floresta",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 507,
+        "weapon_name": "weapon_knife_karambit",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-1483.png",
+        "paint_name": "Karambit ★ | Floresta Boreal",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 507,
@@ -7062,6 +7534,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-578.png",
         "paint_name": "Karambit ★ | Águas Claras",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 507,
+        "weapon_name": "weapon_knife_karambit",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-1479.png",
+        "paint_name": "Karambit ★ | Teia Rubra",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 507,
@@ -7133,7 +7613,15 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_kukri-59.png",
         "paint_name": "Faca Kukri ★ | Massacre",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 526,
+        "weapon_name": "weapon_knife_kukri",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_kukri-1480.png",
+        "paint_name": "Faca Kukri ★ | Aço Azul",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 526,
@@ -7146,10 +7634,26 @@
     {
         "weapon_defindex": 526,
         "weapon_name": "weapon_knife_kukri",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_kukri-1481.png",
+        "paint_name": "Faca Kukri ★ | Manchado",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 526,
+        "weapon_name": "weapon_knife_kukri",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_kukri-43.png",
         "paint_name": "Faca Kukri ★ | Manchado",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 526,
+        "weapon_name": "weapon_knife_kukri",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_kukri-1482.png",
+        "paint_name": "Faca Kukri ★ | Aquecimento de Aço",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 526,
@@ -7162,6 +7666,14 @@
     {
         "weapon_defindex": 526,
         "weapon_name": "weapon_knife_kukri",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_kukri-1478.png",
+        "paint_name": "Faca Kukri ★ | Camuflagem Digital — Floresta",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 526,
+        "weapon_name": "weapon_knife_kukri",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_kukri-5.png",
         "paint_name": "Faca Kukri ★ | Camuflagem Digital — Floresta",
@@ -7170,10 +7682,26 @@
     {
         "weapon_defindex": 526,
         "weapon_name": "weapon_knife_kukri",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_kukri-1483.png",
+        "paint_name": "Faca Kukri ★ | Floresta Boreal",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 526,
+        "weapon_name": "weapon_knife_kukri",
         "paint": "77",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_kukri-77.png",
         "paint_name": "Faca Kukri ★ | Floresta Boreal",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 526,
+        "weapon_name": "weapon_knife_kukri",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_kukri-1479.png",
+        "paint_name": "Faca Kukri ★ | Teia Rubra",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 526,
@@ -7317,7 +7845,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-413.png",
         "paint_name": "Baioneta M9 ★ | Mármore Desbotado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 508,
@@ -7349,7 +7877,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-59.png",
         "paint_name": "Baioneta M9 ★ | Massacre",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 508,
@@ -7357,7 +7885,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-409.png",
         "paint_name": "Baioneta M9 ★ | Dente de Tigre",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 508,
+        "weapon_name": "weapon_knife_m9_bayonet",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-1480.png",
+        "paint_name": "Baioneta M9 ★ | Aço Azul",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 508,
@@ -7378,10 +7914,26 @@
     {
         "weapon_defindex": 508,
         "weapon_name": "weapon_knife_m9_bayonet",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-1481.png",
+        "paint_name": "Baioneta M9 ★ | Manchado",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 508,
+        "weapon_name": "weapon_knife_m9_bayonet",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-43.png",
         "paint_name": "Baioneta M9 ★ | Manchado",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 508,
+        "weapon_name": "weapon_knife_m9_bayonet",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-1482.png",
+        "paint_name": "Baioneta M9 ★ | Aquecimento de Aço",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 508,
@@ -7397,7 +7949,7 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-414.png",
         "paint_name": "Baioneta M9 ★ | Revestimento Enferrujado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 508,
@@ -7426,10 +7978,26 @@
     {
         "weapon_defindex": 508,
         "weapon_name": "weapon_knife_m9_bayonet",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-1478.png",
+        "paint_name": "Baioneta M9 ★ | Camuflagem Digital — Floresta",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 508,
+        "weapon_name": "weapon_knife_m9_bayonet",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-5.png",
         "paint_name": "Baioneta M9 ★ | Camuflagem Digital — Floresta",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 508,
+        "weapon_name": "weapon_knife_m9_bayonet",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-1483.png",
+        "paint_name": "Baioneta M9 ★ | Floresta Boreal",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 508,
@@ -7446,6 +8014,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-579.png",
         "paint_name": "Baioneta M9 ★ | Águas Claras",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 508,
+        "weapon_name": "weapon_knife_m9_bayonet",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-1479.png",
+        "paint_name": "Baioneta M9 ★ | Teia Rubra",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 508,
@@ -7557,7 +8133,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-413.png",
         "paint_name": "Faca Nômade ★ | Mármore Desbotado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 521,
@@ -7581,7 +8157,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-59.png",
         "paint_name": "Faca Nômade ★ | Massacre",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 521,
@@ -7589,7 +8165,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-409.png",
         "paint_name": "Faca Nômade ★ | Dente de Tigre",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 521,
+        "weapon_name": "weapon_knife_outdoor",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-1480.png",
+        "paint_name": "Faca Nômade ★ | Aço Azul",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 521,
@@ -7605,7 +8189,15 @@
         "paint": "410",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-410.png",
         "paint_name": "Faca Nômade ★ | Aço de Damasco",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 521,
+        "weapon_name": "weapon_knife_outdoor",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-1481.png",
+        "paint_name": "Faca Nômade ★ | Manchado",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 521,
@@ -7614,6 +8206,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-43.png",
         "paint_name": "Faca Nômade ★ | Manchado",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 521,
+        "weapon_name": "weapon_knife_outdoor",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-1482.png",
+        "paint_name": "Faca Nômade ★ | Aquecimento de Aço",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 521,
@@ -7629,7 +8229,15 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-414.png",
         "paint_name": "Faca Nômade ★ | Revestimento Enferrujado",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 521,
+        "weapon_name": "weapon_knife_outdoor",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-1478.png",
+        "paint_name": "Faca Nômade ★ | Camuflagem Digital — Floresta",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 521,
@@ -7642,10 +8250,26 @@
     {
         "weapon_defindex": 521,
         "weapon_name": "weapon_knife_outdoor",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-1483.png",
+        "paint_name": "Faca Nômade ★ | Floresta Boreal",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 521,
+        "weapon_name": "weapon_knife_outdoor",
         "paint": "77",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-77.png",
         "paint_name": "Faca Nômade ★ | Floresta Boreal",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 521,
+        "weapon_name": "weapon_knife_outdoor",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-1479.png",
+        "paint_name": "Faca Nômade ★ | Teia Rubra",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 521,
@@ -7797,7 +8421,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-413.png",
         "paint_name": "Adagas Sombrias ★ | Mármore Desbotado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 516,
@@ -7829,7 +8453,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-59.png",
         "paint_name": "Adagas Sombrias ★ | Massacre",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 516,
@@ -7837,7 +8461,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-409.png",
         "paint_name": "Adagas Sombrias ★ | Dente de Tigre",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 516,
+        "weapon_name": "weapon_knife_push",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-1480.png",
+        "paint_name": "Adagas Sombrias ★ | Aço Azul",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 516,
@@ -7858,10 +8490,26 @@
     {
         "weapon_defindex": 516,
         "weapon_name": "weapon_knife_push",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-1481.png",
+        "paint_name": "Adagas Sombrias ★ | Manchado",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 516,
+        "weapon_name": "weapon_knife_push",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-43.png",
         "paint_name": "Adagas Sombrias ★ | Manchado",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 516,
+        "weapon_name": "weapon_knife_push",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-1482.png",
+        "paint_name": "Adagas Sombrias ★ | Aquecimento de Aço",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 516,
@@ -7877,7 +8525,7 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-414.png",
         "paint_name": "Adagas Sombrias ★ | Revestimento Enferrujado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 516,
@@ -7906,10 +8554,26 @@
     {
         "weapon_defindex": 516,
         "weapon_name": "weapon_knife_push",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-1478.png",
+        "paint_name": "Adagas Sombrias ★ | Camuflagem Digital — Floresta",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 516,
+        "weapon_name": "weapon_knife_push",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-5.png",
         "paint_name": "Adagas Sombrias ★ | Camuflagem Digital — Floresta",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 516,
+        "weapon_name": "weapon_knife_push",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-1483.png",
+        "paint_name": "Adagas Sombrias ★ | Floresta Boreal",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 516,
@@ -7926,6 +8590,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-579.png",
         "paint_name": "Adagas Sombrias ★ | Águas Claras",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 516,
+        "weapon_name": "weapon_knife_push",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-1479.png",
+        "paint_name": "Adagas Sombrias ★ | Teia Rubra",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 516,
@@ -8037,7 +8709,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-413.png",
         "paint_name": "Faca Esqueleto ★ | Mármore Desbotado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 525,
@@ -8061,7 +8733,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-59.png",
         "paint_name": "Faca Esqueleto ★ | Massacre",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 525,
@@ -8069,7 +8741,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-409.png",
         "paint_name": "Faca Esqueleto ★ | Dente de Tigre",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 525,
+        "weapon_name": "weapon_knife_skeleton",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-1480.png",
+        "paint_name": "Faca Esqueleto ★ | Aço Azul",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 525,
@@ -8085,7 +8765,15 @@
         "paint": "410",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-410.png",
         "paint_name": "Faca Esqueleto ★ | Aço de Damasco",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 525,
+        "weapon_name": "weapon_knife_skeleton",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-1481.png",
+        "paint_name": "Faca Esqueleto ★ | Manchado",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 525,
@@ -8094,6 +8782,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-43.png",
         "paint_name": "Faca Esqueleto ★ | Manchado",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 525,
+        "weapon_name": "weapon_knife_skeleton",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-1482.png",
+        "paint_name": "Faca Esqueleto ★ | Aquecimento de Aço",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 525,
@@ -8109,7 +8805,15 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-414.png",
         "paint_name": "Faca Esqueleto ★ | Revestimento Enferrujado",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 525,
+        "weapon_name": "weapon_knife_skeleton",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-1478.png",
+        "paint_name": "Faca Esqueleto ★ | Camuflagem Digital — Floresta",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 525,
@@ -8122,10 +8826,26 @@
     {
         "weapon_defindex": 525,
         "weapon_name": "weapon_knife_skeleton",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-1483.png",
+        "paint_name": "Faca Esqueleto ★ | Floresta Boreal",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 525,
+        "weapon_name": "weapon_knife_skeleton",
         "paint": "77",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-77.png",
         "paint_name": "Faca Esqueleto ★ | Floresta Boreal",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 525,
+        "weapon_name": "weapon_knife_skeleton",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-1479.png",
+        "paint_name": "Faca Esqueleto ★ | Teia Rubra",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 525,
@@ -8237,7 +8957,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-413.png",
         "paint_name": "Faca Stiletto ★ | Mármore Desbotado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 522,
@@ -8261,7 +8981,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-59.png",
         "paint_name": "Faca Stiletto ★ | Massacre",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 522,
@@ -8269,7 +8989,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-409.png",
         "paint_name": "Faca Stiletto ★ | Dente de Tigre",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 522,
+        "weapon_name": "weapon_knife_stiletto",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-1480.png",
+        "paint_name": "Faca Stiletto ★ | Aço Azul",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 522,
@@ -8290,10 +9018,26 @@
     {
         "weapon_defindex": 522,
         "weapon_name": "weapon_knife_stiletto",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-1481.png",
+        "paint_name": "Faca Stiletto ★ | Manchado",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 522,
+        "weapon_name": "weapon_knife_stiletto",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-43.png",
         "paint_name": "Faca Stiletto ★ | Manchado",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 522,
+        "weapon_name": "weapon_knife_stiletto",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-1482.png",
+        "paint_name": "Faca Stiletto ★ | Aquecimento de Aço",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 522,
@@ -8309,7 +9053,15 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-414.png",
         "paint_name": "Faca Stiletto ★ | Revestimento Enferrujado",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 522,
+        "weapon_name": "weapon_knife_stiletto",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-1478.png",
+        "paint_name": "Faca Stiletto ★ | Camuflagem Digital — Floresta",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 522,
@@ -8322,10 +9074,26 @@
     {
         "weapon_defindex": 522,
         "weapon_name": "weapon_knife_stiletto",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-1483.png",
+        "paint_name": "Faca Stiletto ★ | Floresta Boreal",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 522,
+        "weapon_name": "weapon_knife_stiletto",
         "paint": "77",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-77.png",
         "paint_name": "Faca Stiletto ★ | Floresta Boreal",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 522,
+        "weapon_name": "weapon_knife_stiletto",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-1479.png",
+        "paint_name": "Faca Stiletto ★ | Teia Rubra",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 522,
@@ -8477,7 +9245,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-413.png",
         "paint_name": "Faca Bowie ★ | Mármore Desbotado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 514,
@@ -8509,7 +9277,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-59.png",
         "paint_name": "Faca Bowie ★ | Massacre",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 514,
@@ -8517,7 +9285,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-409.png",
         "paint_name": "Faca Bowie ★ | Dente de Tigre",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 514,
+        "weapon_name": "weapon_knife_survival_bowie",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-1480.png",
+        "paint_name": "Faca Bowie ★ | Aço Azul",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 514,
@@ -8538,10 +9314,26 @@
     {
         "weapon_defindex": 514,
         "weapon_name": "weapon_knife_survival_bowie",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-1481.png",
+        "paint_name": "Faca Bowie ★ | Manchado",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 514,
+        "weapon_name": "weapon_knife_survival_bowie",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-43.png",
         "paint_name": "Faca Bowie ★ | Manchado",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 514,
+        "weapon_name": "weapon_knife_survival_bowie",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-1482.png",
+        "paint_name": "Faca Bowie ★ | Aquecimento de Aço",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 514,
@@ -8557,7 +9349,7 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-414.png",
         "paint_name": "Faca Bowie ★ | Revestimento Enferrujado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 514,
@@ -8586,10 +9378,26 @@
     {
         "weapon_defindex": 514,
         "weapon_name": "weapon_knife_survival_bowie",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-1478.png",
+        "paint_name": "Faca Bowie ★ | Camuflagem Digital — Floresta",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 514,
+        "weapon_name": "weapon_knife_survival_bowie",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-5.png",
         "paint_name": "Faca Bowie ★ | Camuflagem Digital — Floresta",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 514,
+        "weapon_name": "weapon_knife_survival_bowie",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-1483.png",
+        "paint_name": "Faca Bowie ★ | Floresta Boreal",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 514,
@@ -8606,6 +9414,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-579.png",
         "paint_name": "Faca Bowie ★ | Águas Claras",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 514,
+        "weapon_name": "weapon_knife_survival_bowie",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-1479.png",
+        "paint_name": "Faca Bowie ★ | Teia Rubra",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 514,
@@ -8757,7 +9573,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-413.png",
         "paint_name": "Faca do Caçador ★ | Mármore Desbotado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 509,
@@ -8789,7 +9605,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-59.png",
         "paint_name": "Faca do Caçador ★ | Massacre",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 509,
@@ -8797,7 +9613,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-409.png",
         "paint_name": "Faca do Caçador ★ | Dente de Tigre",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 509,
+        "weapon_name": "weapon_knife_tactical",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-1480.png",
+        "paint_name": "Faca do Caçador ★ | Aço Azul",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 509,
@@ -8818,10 +9642,26 @@
     {
         "weapon_defindex": 509,
         "weapon_name": "weapon_knife_tactical",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-1481.png",
+        "paint_name": "Faca do Caçador ★ | Manchado",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 509,
+        "weapon_name": "weapon_knife_tactical",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-43.png",
         "paint_name": "Faca do Caçador ★ | Manchado",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 509,
+        "weapon_name": "weapon_knife_tactical",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-1482.png",
+        "paint_name": "Faca do Caçador ★ | Aquecimento de Aço",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 509,
@@ -8837,7 +9677,7 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-414.png",
         "paint_name": "Faca do Caçador ★ | Revestimento Enferrujado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 509,
@@ -8853,7 +9693,7 @@
         "paint": "620",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-620.png",
         "paint_name": "Faca do Caçador ★ | Ultravioleta",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 509,
@@ -8874,10 +9714,26 @@
     {
         "weapon_defindex": 509,
         "weapon_name": "weapon_knife_tactical",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-1478.png",
+        "paint_name": "Faca do Caçador ★ | Camuflagem Digital — Floresta",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 509,
+        "weapon_name": "weapon_knife_tactical",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-5.png",
         "paint_name": "Faca do Caçador ★ | Camuflagem Digital — Floresta",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 509,
+        "weapon_name": "weapon_knife_tactical",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-1483.png",
+        "paint_name": "Faca do Caçador ★ | Floresta Boreal",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 509,
@@ -8894,6 +9750,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-579.png",
         "paint_name": "Faca do Caçador ★ | Águas Claras",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 509,
+        "weapon_name": "weapon_knife_tactical",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-1479.png",
+        "paint_name": "Faca do Caçador ★ | Teia Rubra",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 509,
@@ -8997,7 +9861,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-413.png",
         "paint_name": "Faca Ursus ★ | Mármore Desbotado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 519,
@@ -9021,7 +9885,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-59.png",
         "paint_name": "Faca Ursus ★ | Massacre",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 519,
@@ -9029,7 +9893,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-409.png",
         "paint_name": "Faca Ursus ★ | Dente de Tigre",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 519,
+        "weapon_name": "weapon_knife_ursus",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-1480.png",
+        "paint_name": "Faca Ursus ★ | Aço Azul",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 519,
@@ -9050,10 +9922,26 @@
     {
         "weapon_defindex": 519,
         "weapon_name": "weapon_knife_ursus",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-1481.png",
+        "paint_name": "Faca Ursus ★ | Manchado",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 519,
+        "weapon_name": "weapon_knife_ursus",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-43.png",
         "paint_name": "Faca Ursus ★ | Manchado",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 519,
+        "weapon_name": "weapon_knife_ursus",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-1482.png",
+        "paint_name": "Faca Ursus ★ | Aquecimento de Aço",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 519,
@@ -9069,7 +9957,15 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-414.png",
         "paint_name": "Faca Ursus ★ | Revestimento Enferrujado",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 519,
+        "weapon_name": "weapon_knife_ursus",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-1478.png",
+        "paint_name": "Faca Ursus ★ | Camuflagem Digital — Floresta",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 519,
@@ -9082,10 +9978,26 @@
     {
         "weapon_defindex": 519,
         "weapon_name": "weapon_knife_ursus",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-1483.png",
+        "paint_name": "Faca Ursus ★ | Floresta Boreal",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 519,
+        "weapon_name": "weapon_knife_ursus",
         "paint": "77",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-77.png",
         "paint_name": "Faca Ursus ★ | Floresta Boreal",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 519,
+        "weapon_name": "weapon_knife_ursus",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-1479.png",
+        "paint_name": "Faca Ursus ★ | Teia Rubra",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 519,
@@ -9197,7 +10109,7 @@
         "paint": "856",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-856.png",
         "paint_name": "Faca Talon ★ | Mármore Desbotado",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 523,
@@ -9221,7 +10133,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-59.png",
         "paint_name": "Faca Talon ★ | Massacre",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 523,
@@ -9229,7 +10141,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-409.png",
         "paint_name": "Faca Talon ★ | Dente de Tigre",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 523,
+        "weapon_name": "weapon_knife_widowmaker",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-1480.png",
+        "paint_name": "Faca Talon ★ | Aço Azul",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 523,
@@ -9250,10 +10170,26 @@
     {
         "weapon_defindex": 523,
         "weapon_name": "weapon_knife_widowmaker",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-1481.png",
+        "paint_name": "Faca Talon ★ | Manchado",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 523,
+        "weapon_name": "weapon_knife_widowmaker",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-43.png",
         "paint_name": "Faca Talon ★ | Manchado",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 523,
+        "weapon_name": "weapon_knife_widowmaker",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-1482.png",
+        "paint_name": "Faca Talon ★ | Aquecimento de Aço",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 523,
@@ -9269,7 +10205,15 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-414.png",
         "paint_name": "Faca Talon ★ | Revestimento Enferrujado",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 523,
+        "weapon_name": "weapon_knife_widowmaker",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-1478.png",
+        "paint_name": "Faca Talon ★ | Camuflagem Digital — Floresta",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 523,
@@ -9282,10 +10226,26 @@
     {
         "weapon_defindex": 523,
         "weapon_name": "weapon_knife_widowmaker",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-1483.png",
+        "paint_name": "Faca Talon ★ | Floresta Boreal",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 523,
+        "weapon_name": "weapon_knife_widowmaker",
         "paint": "77",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-77.png",
         "paint_name": "Faca Talon ★ | Floresta Boreal",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 523,
+        "weapon_name": "weapon_knife_widowmaker",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-1479.png",
+        "paint_name": "Faca Talon ★ | Teia Rubra",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 523,
@@ -9341,14 +10301,6 @@
         "paint": 0,
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m249.png",
         "paint_name": "M249  | Default",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 14,
-        "weapon_name": "weapon_m249",
-        "paint": "1435",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m249-1435.png",
-        "paint_name": "M249 | Bock Blocks",
         "legacy_model": false
     },
     {
@@ -9482,6 +10434,14 @@
     {
         "weapon_defindex": 14,
         "weapon_name": "weapon_m249",
+        "paint": "1435",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m249-1435.png",
+        "paint_name": "M249 | Cocoriblocos",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 14,
+        "weapon_name": "weapon_m249",
         "paint": "120",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m249-120.png",
         "paint_name": "M249 | Hipnose",
@@ -9557,30 +10517,6 @@
         "paint": 0,
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1.png",
         "paint_name": "M4A4  | Default",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 16,
-        "weapon_name": "weapon_m4a1",
-        "paint": "1463",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1-1463.png",
-        "paint_name": "M4A4 | Falak",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 16,
-        "weapon_name": "weapon_m4a1",
-        "paint": "1446",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1-1446.png",
-        "paint_name": "M4A4 | Dark Operative",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 16,
-        "weapon_name": "weapon_m4a1",
-        "paint": "1432",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1-1432.png",
-        "paint_name": "M4A4 | Zubastick",
         "legacy_model": false
     },
     {
@@ -9890,6 +10826,22 @@
     {
         "weapon_defindex": 16,
         "weapon_name": "weapon_m4a1",
+        "paint": "1446",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1-1446.png",
+        "paint_name": "M4A4 | Operativa Sombria",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 16,
+        "weapon_name": "weapon_m4a1",
+        "paint": "1463",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1-1463.png",
+        "paint_name": "M4A4 | Falak",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 16,
+        "weapon_name": "weapon_m4a1",
         "paint": "118",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1-118.png",
         "paint_name": "M4A4 | Turbina",
@@ -9920,27 +10872,19 @@
         "legacy_model": false
     },
     {
+        "weapon_defindex": 16,
+        "weapon_name": "weapon_m4a1",
+        "paint": "1432",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1-1432.png",
+        "paint_name": "M4A4 | Dentada",
+        "legacy_model": false
+    },
+    {
         "weapon_defindex": 60,
         "weapon_name": "weapon_m4a1_silencer",
         "paint": 0,
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1_silencer.png",
         "paint_name": "M4A1-S  | Default",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 60,
-        "weapon_name": "weapon_m4a1_silencer",
-        "paint": "1476",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1_silencer-1476.png",
-        "paint_name": "M4A1-S | Fatal Glitch",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 60,
-        "weapon_name": "weapon_m4a1_silencer",
-        "paint": "1433",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1_silencer-1433.png",
-        "paint_name": "M4A1-S | Electrum",
         "legacy_model": false
     },
     {
@@ -10250,9 +11194,25 @@
     {
         "weapon_defindex": 60,
         "weapon_name": "weapon_m4a1_silencer",
+        "paint": "1476",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1_silencer-1476.png",
+        "paint_name": "M4A1-S | Falha Fatal",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 60,
+        "weapon_name": "weapon_m4a1_silencer",
         "paint": "1166",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1_silencer-1166.png",
         "paint_name": "M4A1-S | Lótus Negra",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 60,
+        "weapon_name": "weapon_m4a1_silencer",
+        "paint": "1433",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1_silencer-1433.png",
+        "paint_name": "M4A1-S | Electrum",
         "legacy_model": false
     },
     {
@@ -10357,22 +11317,6 @@
         "paint": 0,
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mac10.png",
         "paint_name": "MAC-10  | Default",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 17,
-        "weapon_name": "weapon_mac10",
-        "paint": "1454",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mac10-1454.png",
-        "paint_name": "MAC-10 | Arabesque Mosaic",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 17,
-        "weapon_name": "weapon_mac10",
-        "paint": "1448",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mac10-1448.png",
-        "paint_name": "MAC-10 | Video Cam",
         "legacy_model": false
     },
     {
@@ -10714,6 +11658,14 @@
     {
         "weapon_defindex": 17,
         "weapon_name": "weapon_mac10",
+        "paint": "1454",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mac10-1454.png",
+        "paint_name": "MAC-10 | Mosaico Arabesco",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 17,
+        "weapon_name": "weapon_mac10",
         "paint": "1164",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mac10-1164.png",
         "paint_name": "MAC-10 | Caixa de Luz",
@@ -10741,6 +11693,14 @@
         "paint": "1204",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mac10-1204.png",
         "paint_name": "MAC-10 | Descarrilamento",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 17,
+        "weapon_name": "weapon_mac10",
+        "paint": "1448",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mac10-1448.png",
+        "paint_name": "MAC-10 | Câmera Filmadora",
         "legacy_model": false
     },
     {
@@ -11330,22 +12290,6 @@
     {
         "weapon_defindex": 33,
         "weapon_name": "weapon_mp7",
-        "paint": "1468",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp7-1468.png",
-        "paint_name": "MP7 | Base-2",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 33,
-        "weapon_name": "weapon_mp7",
-        "paint": "1436",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp7-1436.png",
-        "paint_name": "MP7 | Amberline",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 33,
-        "weapon_name": "weapon_mp7",
         "paint": "752",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp7-752.png",
         "paint_name": "MP7 | Degradê",
@@ -11546,6 +12490,22 @@
     {
         "weapon_defindex": 33,
         "weapon_name": "weapon_mp7",
+        "paint": "1436",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp7-1436.png",
+        "paint_name": "MP7 | Linhâmbar",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 33,
+        "weapon_name": "weapon_mp7",
+        "paint": "1468",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp7-1468.png",
+        "paint_name": "MP7 | Base 2",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 33,
+        "weapon_name": "weapon_mp7",
         "paint": "1163",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp7-1163.png",
         "paint_name": "MP7 | Basta Sorrir",
@@ -11653,30 +12613,6 @@
         "paint": 0,
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp9.png",
         "paint_name": "MP9  | Default",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 34,
-        "weapon_name": "weapon_mp9",
-        "paint": "1473",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp9-1473.png",
-        "paint_name": "MP9 | Dune Asp",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 34,
-        "weapon_name": "weapon_mp9",
-        "paint": "1469",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp9-1469.png",
-        "paint_name": "MP9 | Spy Prototype",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 34,
-        "weapon_name": "weapon_mp9",
-        "paint": "1423",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp9-1423.png",
-        "paint_name": "MP9 | Urban Sovereign",
         "legacy_model": false
     },
     {
@@ -11946,9 +12882,33 @@
     {
         "weapon_defindex": 34,
         "weapon_name": "weapon_mp9",
+        "paint": "1473",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp9-1473.png",
+        "paint_name": "MP9 | Áspide Dunar",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 34,
+        "weapon_name": "weapon_mp9",
         "paint": "1193",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp9-1193.png",
         "paint_name": "MP9 | Nexus",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 34,
+        "weapon_name": "weapon_mp9",
+        "paint": "1469",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp9-1469.png",
+        "paint_name": "MP9 | Protótipo de Espionagem",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 34,
+        "weapon_name": "weapon_mp9",
+        "paint": "1423",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp9-1423.png",
+        "paint_name": "MP9 | Soberana Urbana",
         "legacy_model": false
     },
     {
@@ -12250,22 +13210,6 @@
     {
         "weapon_defindex": 35,
         "weapon_name": "weapon_nova",
-        "paint": "1474",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_nova-1474.png",
-        "paint_name": "Nova | Morning Sun",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 35,
-        "weapon_name": "weapon_nova",
-        "paint": "1442",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_nova-1442.png",
-        "paint_name": "Nova | Smart Gun",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 35,
-        "weapon_name": "weapon_nova",
         "paint": "298",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_nova-298.png",
         "paint_name": "Nova | Brilho Militar",
@@ -12522,6 +13466,14 @@
     {
         "weapon_defindex": 35,
         "weapon_name": "weapon_nova",
+        "paint": "1474",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_nova-1474.png",
+        "paint_name": "Nova | Sol da Manhã",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 35,
+        "weapon_name": "weapon_nova",
         "paint": "1350",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_nova-1350.png",
         "paint_name": "Nova | Ocular",
@@ -12533,6 +13485,14 @@
         "paint": "1192",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_nova-1192.png",
         "paint_name": "Nova | Sol Nascente",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 35,
+        "weapon_name": "weapon_nova",
+        "paint": "1442",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_nova-1442.png",
+        "paint_name": "Nova | Arma Inteligente",
         "legacy_model": false
     },
     {
@@ -12629,22 +13589,6 @@
         "paint": 0,
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_p250.png",
         "paint_name": "P250  | Default",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 36,
-        "weapon_name": "weapon_p250",
-        "paint": "1455",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_p250-1455.png",
-        "paint_name": "P250 | Lotus Imprint",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 36,
-        "weapon_name": "weapon_p250",
-        "paint": "1420",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_p250-1420.png",
-        "paint_name": "P250 | Kintsugi",
         "legacy_model": false
     },
     {
@@ -13010,6 +13954,22 @@
     {
         "weapon_defindex": 36,
         "weapon_name": "weapon_p250",
+        "paint": "1420",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_p250-1420.png",
+        "paint_name": "P250 | Kintsugi",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 36,
+        "weapon_name": "weapon_p250",
+        "paint": "1455",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_p250-1455.png",
+        "paint_name": "P250 | Impressão de Lótus",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 36,
+        "weapon_name": "weapon_p250",
         "paint": "1307",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_p250-1307.png",
         "paint_name": "P250 | Óxido de Cobre",
@@ -13101,14 +14061,6 @@
         "paint": 0,
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_p90.png",
         "paint_name": "P90  | Default",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 19,
-        "weapon_name": "weapon_p90",
-        "paint": "1419",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_p90-1419.png",
-        "paint_name": "P90 | Deathgaze",
         "legacy_model": false
     },
     {
@@ -13426,6 +14378,14 @@
     {
         "weapon_defindex": 19,
         "weapon_name": "weapon_p90",
+        "paint": "1419",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_p90-1419.png",
+        "paint_name": "P90 | Olhar Mortal",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 19,
+        "weapon_name": "weapon_p90",
         "paint": "127",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_p90-127.png",
         "paint_name": "P90 | Rush do Randy",
@@ -13525,14 +14485,6 @@
         "paint": 0,
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_revolver.png",
         "paint_name": "Revólver R8  | Default",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 64,
-        "weapon_name": "weapon_revolver",
-        "paint": "1445",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_revolver-1445.png",
-        "paint_name": "R8 Revolver | Monarch",
         "legacy_model": false
     },
     {
@@ -13682,6 +14634,14 @@
     {
         "weapon_defindex": 64,
         "weapon_name": "weapon_revolver",
+        "paint": "1445",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_revolver-1445.png",
+        "paint_name": "Revólver R8 | Monarca",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 64,
+        "weapon_name": "weapon_revolver",
         "paint": "123",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_revolver-123.png",
         "paint_name": "Revólver R8 | Tango",
@@ -13749,22 +14709,6 @@
         "paint": 0,
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_sawedoff.png",
         "paint_name": "Cano Curto  | Default",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 29,
-        "weapon_name": "weapon_sawedoff",
-        "paint": "1475",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_sawedoff-1475.png",
-        "paint_name": "Sawed-Off | Lunar Wyrm",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 29,
-        "weapon_name": "weapon_sawedoff",
-        "paint": "1427",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_sawedoff-1427.png",
-        "paint_name": "Sawed-Off | Fusion",
         "legacy_model": false
     },
     {
@@ -14002,9 +14946,25 @@
     {
         "weapon_defindex": 29,
         "weapon_name": "weapon_sawedoff",
+        "paint": "1427",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_sawedoff-1427.png",
+        "paint_name": "Cano Curto | Fusão",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 29,
+        "weapon_name": "weapon_sawedoff",
         "paint": "1160",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_sawedoff-1160.png",
         "paint_name": "Cano Curto | Entrada Analógica",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 29,
+        "weapon_name": "weapon_sawedoff",
+        "paint": "1475",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_sawedoff-1475.png",
+        "paint_name": "Cano Curto | Serpe Lunar",
         "legacy_model": false
     },
     {
@@ -14045,22 +15005,6 @@
         "paint": 0,
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_scar20.png",
         "paint_name": "SCAR-20  | Default",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 38,
-        "weapon_name": "weapon_scar20",
-        "paint": "1453",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_scar20-1453.png",
-        "paint_name": "SCAR-20 | Sirocco Script",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 38,
-        "weapon_name": "weapon_scar20",
-        "paint": "1470",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_scar20-1470.png",
-        "paint_name": "SCAR-20 | Arctic Camo Panels",
         "legacy_model": false
     },
     {
@@ -14250,9 +15194,25 @@
     {
         "weapon_defindex": 38,
         "weapon_name": "weapon_scar20",
+        "paint": "1470",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_scar20-1470.png",
+        "paint_name": "SCAR-20 | Painéis de Camuflagem Ártica",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 38,
+        "weapon_name": "weapon_scar20",
         "paint": "1343",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_scar20-1343.png",
         "paint_name": "SCAR-20 | Enjaulada",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 38,
+        "weapon_name": "weapon_scar20",
+        "paint": "1453",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_scar20-1453.png",
+        "paint_name": "SCAR-20 | Manuscrito Siroco",
         "legacy_model": false
     },
     {
@@ -15050,22 +16010,6 @@
     {
         "weapon_defindex": 30,
         "weapon_name": "weapon_tec9",
-        "paint": "1462",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_tec9-1462.png",
-        "paint_name": "Tec-9 | Sultan",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 30,
-        "weapon_name": "weapon_tec9",
-        "paint": "1447",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_tec9-1447.png",
-        "paint_name": "Tec-9 | Perimeter",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 30,
-        "weapon_name": "weapon_tec9",
         "paint": "248",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_tec9-248.png",
         "paint_name": "Tec-9 | Quartzo Vermelho",
@@ -15432,19 +16376,27 @@
         "legacy_model": false
     },
     {
-        "weapon_defindex": 24,
-        "weapon_name": "weapon_ump45",
-        "paint": 0,
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ump45.png",
-        "paint_name": "UMP-45  | Default",
+        "weapon_defindex": 30,
+        "weapon_name": "weapon_tec9",
+        "paint": "1447",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_tec9-1447.png",
+        "paint_name": "Tec-9 | Perímetro",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 30,
+        "weapon_name": "weapon_tec9",
+        "paint": "1462",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_tec9-1462.png",
+        "paint_name": "Tec-9 | Sultão",
         "legacy_model": false
     },
     {
         "weapon_defindex": 24,
         "weapon_name": "weapon_ump45",
-        "paint": "1426",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ump45-1426.png",
-        "paint_name": "UMP-45 | Fragment",
+        "paint": 0,
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ump45.png",
+        "paint_name": "UMP-45  | Default",
         "legacy_model": false
     },
     {
@@ -15794,6 +16746,14 @@
     {
         "weapon_defindex": 24,
         "weapon_name": "weapon_ump45",
+        "paint": "1426",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ump45-1426.png",
+        "paint_name": "UMP-45 | Fragmento",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 24,
+        "weapon_name": "weapon_ump45",
         "paint": "1203",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ump45-1203.png",
         "paint_name": "UMP-45 | Transporte Noturno",
@@ -15805,22 +16765,6 @@
         "paint": 0,
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_usp_silencer.png",
         "paint_name": "USP-S  | Default",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 61,
-        "weapon_name": "weapon_usp_silencer",
-        "paint": "1451",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_usp_silencer-1451.png",
-        "paint_name": "USP-S | Spiral Glitch",
-        "legacy_model": false
-    },
-    {
-        "weapon_defindex": 61,
-        "weapon_name": "weapon_usp_silencer",
-        "paint": "1431",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_usp_silencer-1431.png",
-        "paint_name": "USP-S | Silent Shot",
         "legacy_model": false
     },
     {
@@ -16168,19 +17112,27 @@
         "legacy_model": false
     },
     {
-        "weapon_defindex": 25,
-        "weapon_name": "weapon_xm1014",
-        "paint": 0,
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_xm1014.png",
-        "paint_name": "XM1014  | Default",
+        "weapon_defindex": 61,
+        "weapon_name": "weapon_usp_silencer",
+        "paint": "1431",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_usp_silencer-1431.png",
+        "paint_name": "USP-S | Tiro Silencioso",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 61,
+        "weapon_name": "weapon_usp_silencer",
+        "paint": "1451",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_usp_silencer-1451.png",
+        "paint_name": "USP-S | Falha Espiral",
         "legacy_model": false
     },
     {
         "weapon_defindex": 25,
         "weapon_name": "weapon_xm1014",
-        "paint": "1471",
-        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_xm1014-1471.png",
-        "paint_name": "XM1014 | Black Site",
+        "paint": 0,
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_xm1014.png",
+        "paint_name": "XM1014  | Default",
         "legacy_model": false
     },
     {
@@ -16509,6 +17461,14 @@
         "paint": "1078",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_xm1014-1078.png",
         "paint_name": "XM1014 | Pneu Azul",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 25,
+        "weapon_name": "weapon_xm1014",
+        "paint": "1471",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_xm1014-1471.png",
+        "paint_name": "XM1014 | Instalação Secreta",
         "legacy_model": false
     },
     {
